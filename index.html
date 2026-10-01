@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aptis Listening Practice</title>
+<style>
+  :root { --bg:#f5f6f8; --card:#fff; --text:#1d2330; --muted:#6b7280; --line:#e3e6eb; --accent:#2f6fed;
+          --ok:#1f9d55; --okbg:#e7f6ee; --bad:#d64545; --badbg:#fdecec; --warn:#b7791f; --warnbg:#fdf3e2; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#14171c; --card:#1d2129; --text:#e7e9ee; --muted:#9aa3b2; --line:#2e3440; --accent:#6c9cff;
+            --ok:#4ccf86; --okbg:#173326; --bad:#ff7b7b; --badbg:#3a1d1d; --warn:#f0b354; --warnbg:#3a2e17; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  .wrap { max-width:720px; margin:0 auto; padding:16px; }
+  header { display:flex; justify-content:space-between; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:12px; }
+  h1 { font-size:18px; margin:0; }
+  .stats { font-size:14px; color:var(--muted); }
+  .bar { height:8px; background:var(--line); border-radius:4px; overflow:hidden; margin-bottom:16px; }
+  .bar > div { height:100%; background:var(--ok); transition:width .3s; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px; }
+  .qno { font-size:13px; color:var(--muted); margin-bottom:4px; }
+  .question { font-size:18px; font-weight:600; margin:0 0 12px; }
+  audio { width:100%; margin-bottom:12px; }
+  .opts { display:grid; gap:8px; }
+  .opt { text-align:left; padding:12px 14px; border:1px solid var(--line); border-radius:10px; background:var(--card);
+         color:var(--text); font:inherit; cursor:pointer; }
+  .opt:hover:not(:disabled) { border-color:var(--accent); }
+  .opt.correct { background:var(--okbg); border-color:var(--ok); }
+  .opt.wrong { background:var(--badbg); border-color:var(--bad); }
+  .opt:disabled { cursor:default; }
+  .result { margin-top:12px; font-weight:600; min-height:24px; }
+  .result.ok { color:var(--ok); } .result.bad { color:var(--bad); }
+  .toggles { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+  .btn { padding:8px 12px; border-radius:8px; border:1px solid var(--line); background:var(--card); color:var(--text);
+         font:inherit; font-size:14px; cursor:pointer; }
+  .btn.primary { background:var(--accent); border-color:var(--accent); color:#fff; }
+  .btn.warn { color:var(--warn); border-color:var(--warn); }
+  .btn.on { border-color:var(--accent); color:var(--accent); }
+  .panel { margin-top:10px; padding:12px; border-radius:8px; background:var(--bg); border:1px solid var(--line); font-size:15px; }
+  .panel h3 { margin:0 0 4px; font-size:13px; color:var(--muted); font-weight:600; text-transform:uppercase; }
+  .hidden { display:none; }
+  .actions { display:flex; justify-content:space-between; gap:8px; margin-top:16px; flex-wrap:wrap; }
+  .done { text-align:center; padding:32px 16px; }
+  .done h2 { color:var(--ok); }
+  .small { font-size:13px; color:var(--muted); }
+  .group { margin:20px 0 8px; font-size:14px; color:var(--muted); font-weight:600; text-transform:uppercase; letter-spacing:.03em; }
+  .tests { display:grid; gap:10px; }
+  .test { display:block; text-decoration:none; color:var(--text); background:var(--card); border:1px solid var(--line);
+          border-radius:12px; padding:14px 16px; }
+  .test:hover { border-color:var(--accent); }
+  .test .name { font-weight:600; }
+  .test .meta { font-size:13px; color:var(--muted); margin-top:2px; }
+  .test .bar { margin:8px 0 0; height:6px; }
+  .tag { display:inline-block; font-size:12px; padding:1px 6px; border-radius:6px; background:var(--warnbg); color:var(--warn); margin-left:6px; }
+  .tag.ok { background:var(--okbg); color:var(--ok); }
+  a.back { color:var(--accent); text-decoration:none; font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div id="home">
+    <header><h1>Luyện nghe Aptis</h1></header>
+    <div id="list"></div>
+    <p class="small" style="margin-top:16px">Thêm đề mới: đặt file .txt vào thư mục rồi chạy <code>python3 build.py</code>.</p>
+  </div>
+  <div id="quiz" class="hidden">
+    <a class="back" href="#">← Chọn đề khác</a>
+    <header style="margin-top:6px">
+      <h1 id="title"></h1>
+      <div class="stats" id="stats"></div>
+    </header>
+    <div class="bar"><div id="progress" style="width:0"></div></div>
+    <div id="app"></div>
+    <p class="small" style="margin-top:16px">Tiến trình được lưu trong trình duyệt. Câu sai hoặc "Chưa nhớ" sẽ quay lại cuối danh sách cho tới khi đúng hết.
+      <button class="btn" id="reset" style="margin-left:6px">Làm lại từ đầu</button></p>
+  </div>
+</div>
+<script src="data/index.js"></script>
+<script>
+(function () {
+  var INDEX = window.QUIZ_INDEX || [];
+  var keyOf = function (slug) { return "aptis-quiz:" + slug; };
+  function readState(slug) {
+    try { var s = JSON.parse(localStorage.getItem(keyOf(slug))); if (s && s.queue) return s; } catch (e) {}
+    return null;
+  }
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+
+  // ===== trang chủ =====
+  function showHome() {
+    document.getElementById("home").classList.remove("hidden");
+    document.getElementById("quiz").classList.add("hidden");
+    document.title = "Luyện nghe Aptis";
+    var list = document.getElementById("list");
+    list.innerHTML = "";
+    if (!INDEX.length) { list.appendChild(el("p", null, "Chưa có đề nào — chạy python3 build.py")); return; }
+    var groups = {};
+    var order = [];
+    INDEX.forEach(function (t) {
+      var g = t.title.split(/\s+[–-]\s+/)[0];
+      if (!groups[g]) { groups[g] = []; order.push(g); }
+      groups[g].push(t);
+    });
+    order.forEach(function (g) {
+      list.appendChild(el("div", "group", g));
+      var box = el("div", "tests");
+      groups[g].forEach(function (t) {
+        var a = el("a", "test"); a.href = "#" + t.slug;
+        var name = el("div", "name", t.title.split(/\s+[–-]\s+/).slice(1).join(" – ") || t.title);
+        var st = readState(t.slug);
+        var m = st ? st.mastered.length : 0;
+        if (st && m === t.count) name.appendChild(el("span", "tag ok", "100%"));
+        if (t.guess) name.appendChild(el("span", "tag", "đáp án AI suy ra"));
+        if (t.no_answer) name.appendChild(el("span", "tag", t.no_answer + " câu thiếu đáp án"));
+        a.appendChild(name);
+        a.appendChild(el("div", "meta", t.count + " câu · " + (st ? "đã thuộc " + m + "/" + t.count + " · sai " + st.wrong : "chưa làm")));
+        var bar = el("div", "bar"), fill = el("div"); fill.style.width = (m / t.count * 100) + "%";
+        bar.appendChild(fill); a.appendChild(bar);
+        box.appendChild(a);
+      });
+      list.appendChild(box);
+    });
+  }
+
+  // ===== router =====
+  var cleanup = null;
+  function route() {
+    if (cleanup) { cleanup(); cleanup = null; }
+    var slug = decodeURIComponent(location.hash.slice(1));
+    if (!slug) return showHome();
+    var reg = window.QUIZ_REG || {};
+    if (reg[slug]) return (cleanup = startQuiz(reg[slug]));
+    var sc = document.createElement("script");
+    sc.src = "data/" + slug + "/data.js";
+    sc.onload = function () { if (decodeURIComponent(location.hash.slice(1)) === slug) route(); };
+    sc.onerror = function () { alert("Không tìm thấy đề: " + slug); location.hash = ""; };
+    document.body.appendChild(sc);
+  }
+  window.addEventListener("hashchange", route);
+  route();
+
+  // ===== làm bài =====
+  function startQuiz(DATA) {
+  document.getElementById("home").classList.add("hidden");
+  document.getElementById("quiz").classList.remove("hidden");
+  document.title = DATA.title;
+  var KEY = keyOf(DATA.slug);
+  var byId = {};
+  DATA.items.forEach(function (q) { byId[q.id] = q; });
+  document.getElementById("title").textContent = DATA.title;
+
+  function shuffle(a) {
+    for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; }
+    return a;
+  }
+  function load() {
+    var s = readState(DATA.slug);
+    if (!s) { try { s = JSON.parse(localStorage.getItem("aptis-quiz:" + DATA.title)); } catch (e) {} }
+    return s && s.queue ? s : null;
+  }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+  function fresh() {
+    return { queue: shuffle(DATA.items.map(function (q) { return q.id; })), mastered: [], attempts: 0, wrong: 0, answered: null };
+  }
+
+  var state = load() || fresh();
+  // bỏ id không còn tồn tại / bổ sung câu mới
+  state.queue = state.queue.filter(function (id) { return byId[id]; });
+  DATA.items.forEach(function (q) {
+    if (state.mastered.indexOf(q.id) < 0 && state.queue.indexOf(q.id) < 0) state.queue.push(q.id);
+  });
+
+  var app = document.getElementById("app");
+
+  // đưa câu hiện tại về cuối, các câu chưa thuộc được xáo trộn lại (câu này không lặp lại ngay)
+  function requeue(id) {
+    var rest = shuffle(state.queue.slice(1));
+    state.queue = rest.concat([id]);
+  }
+
+  function updateStats() {
+    var total = DATA.items.length, m = state.mastered.length;
+    document.getElementById("progress").style.width = (total ? (m / total * 100) : 0) + "%";
+    document.getElementById("stats").textContent =
+      "Đã thuộc " + m + "/" + total + " · Còn lại " + state.queue.length + " · Sai " + state.wrong;
+  }
+
+  function toggle(label, panel) {
+    var b = el("button", "btn", label);
+    b.onclick = function () { panel.classList.toggle("hidden"); b.classList.toggle("on"); };
+    return b;
+  }
+
+  function render() {
+    updateStats();
+    app.innerHTML = "";
+    if (!state.queue.length && !state.answered) {
+      var d = el("div", "card done");
+      d.appendChild(el("h2", null, "🎉 Hoàn thành 100%!"));
+      d.appendChild(el("p", null, "Bạn đã trả lời đúng tất cả " + DATA.items.length + " câu. Tổng lượt làm: " + state.attempts + ", số lần sai: " + state.wrong + "."));
+      var r = el("button", "btn primary", "Luyện lại từ đầu");
+      r.onclick = reset;
+      d.appendChild(r);
+      app.appendChild(d);
+      return;
+    }
+    var q = byId[state.answered ? state.answered.id : state.queue[0]];
+    var card = el("div", "card");
+    card.appendChild(el("div", "qno", "Câu "));
+    card.appendChild(el("p", "question", q.question));
+    if (q.audio) {
+      var au = el("audio"); au.controls = true; au.preload = "auto"; au.src = q.audio;
+      card.appendChild(au);
+    }
+    var opts = el("div", "opts");
+    var result = el("div", "result");
+    var answered = state.answered && state.answered.id === q.id ? state.answered.key : null;
+    var buttons = q.options.map(function (o) {
+      var b = el("button", "opt", o.key + ". " + o.text);
+      b.onclick = function () { choose(q, o.key); };
+      opts.appendChild(b);
+      return b;
+    });
+    card.appendChild(opts);
+    card.appendChild(result);
+
+    // các phần ẩn mặc định
+    var ansPanel = el("div", "panel hidden");
+    ansPanel.appendChild(el("h3", null, "Đáp án"));
+    var ansOpt = q.options.filter(function (o) { return o.key === q.answer; })[0];
+    ansPanel.appendChild(el("div", null, q.answer + (ansOpt ? ". " + ansOpt.text : "")));
+    if (q.answer_guess) ansPanel.appendChild(el("div", "small", "Đáp án do AI suy ra từ transcript, có thể chưa chính xác."));
+
+    var enPanel = el("div", "panel hidden");
+    enPanel.appendChild(el("h3", null, "Nội dung tiếng Anh"));
+    enPanel.appendChild(el("div", null, q.transcript || "(chưa có transcript)"));
+
+    var viPanel = el("div", "panel hidden");
+    viPanel.appendChild(el("h3", null, "Dịch nghĩa"));
+    if (q.question_vi) viPanel.appendChild(el("div", "small", "Câu hỏi: " + q.question_vi));
+    viPanel.appendChild(el("div", null, q.translation || "(chưa có bản dịch)"));
+
+    var tg = el("div", "toggles");
+    tg.appendChild(toggle("Đáp án", ansPanel));
+    tg.appendChild(toggle("Tiếng Anh", enPanel));
+    tg.appendChild(toggle("Dịch nghĩa", viPanel));
+    card.appendChild(tg);
+    card.appendChild(ansPanel);
+    card.appendChild(enPanel);
+    card.appendChild(viPanel);
+
+    var actions = el("div", "actions");
+    var forget = el("button", "btn warn", "Chưa nhớ");
+    var next = el("button", "btn primary", "Câu tiếp →");
+    actions.appendChild(forget);
+    actions.appendChild(next);
+    card.appendChild(actions);
+    app.appendChild(card);
+
+    function showAnswered(key) {
+      buttons.forEach(function (b, i) {
+        var k = q.options[i].key;
+        b.disabled = true;
+        if (k === q.answer) b.classList.add("correct");
+        else if (k === key) b.classList.add("wrong");
+      });
+      var ok = key === q.answer;
+      result.className = "result " + (ok ? "ok" : "bad");
+      result.textContent = ok ? "✓ Đúng" : "✗ Sai — đáp án đúng là " + q.answer + ". Câu này sẽ quay lại sau.";
+      next.disabled = false;
+    }
+
+    if (answered) showAnswered(answered); else next.disabled = true;
+
+    // rời câu hiện tại: sai -> đưa về cuối; đúng -> đã thuộc
+    function leave(forgot) {
+      var a = state.answered;
+      var wasCorrect = a && a.key === q.answer;
+      if (forgot) {
+        if (wasCorrect) {
+          state.mastered = state.mastered.filter(function (x) { return x !== q.id; });
+          state.queue.unshift(q.id);
+        }
+        requeue(q.id);
+      } else if (a && !wasCorrect) {
+        requeue(q.id);
+      }
+      state.answered = null;
+      save(); render();
+    }
+    forget.onclick = function () { leave(true); };
+    next.onclick = function () { leave(false); };
+
+    function choose(q, key) {
+      if (state.answered) return;
+      state.attempts++;
+      state.answered = { id: q.id, key: key };
+      if (key === q.answer) { state.queue.shift(); state.mastered.push(q.id); }
+      else state.wrong++;
+      save();
+      showAnswered(key);
+      updateStats();
+    }
+  }
+
+  function reset() {
+    if (state.queue.length && !confirm("Xoá tiến trình và làm lại từ đầu?")) return;
+    state = fresh(); save(); render();
+  }
+  document.getElementById("reset").onclick = reset;
+
+  function onKey(e) {
+    if (e.target.tagName === "INPUT") return;
+    var k = e.key.toUpperCase();
+    var btns = app.querySelectorAll(".opt");
+    var idx = "ABCD".indexOf(k);
+    if (idx >= 0 && btns[idx] && !btns[idx].disabled) btns[idx].click();
+    if (e.key === "Enter") { var n = app.querySelector(".btn.primary"); if (n && !n.disabled) n.click(); }
+    if (e.key === " ") { var a = app.querySelector("audio"); if (a) { e.preventDefault(); a.paused ? a.play() : a.pause(); } }
+  }
+  document.addEventListener("keydown", onKey);
+
+  render();
+  return function () {
+    document.removeEventListener("keydown", onKey);
+    var a = app.querySelector("audio"); if (a) a.pause();
+    app.innerHTML = "";
+  };
+  }
+})();
+</script>
+</body>
+</html>
