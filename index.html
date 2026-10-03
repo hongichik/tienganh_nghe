@@ -55,6 +55,18 @@
   .test .bar { margin:8px 0 0; height:6px; }
   .tag { display:inline-block; font-size:12px; padding:1px 6px; border-radius:6px; background:var(--warnbg); color:var(--warn); margin-left:6px; }
   .tag.ok { background:var(--okbg); color:var(--ok); }
+  .mist { margin-top:16px; }
+  .mist table { width:100%; border-collapse:collapse; font-size:14px; }
+  .mist th, .mist td { text-align:left; padding:8px 6px; border-bottom:1px solid var(--line); vertical-align:top; }
+  .mist th { color:var(--muted); font-weight:600; font-size:13px; }
+  .mist .n { text-align:center; white-space:nowrap; }
+  .mist .cnt { font-weight:700; color:var(--bad); }
+  .mist .ans { color:var(--ok); }
+  .mist .picked { color:var(--bad); font-size:13px; }
+  .mist details { margin-top:4px; }
+  .mist summary { cursor:pointer; color:var(--accent); font-size:13px; }
+  .mist audio { margin:6px 0; }
+  .mist-head { display:flex; justify-content:space-between; align-items:center; gap:8px; flex-wrap:wrap; }
   a.back { color:var(--accent); text-decoration:none; font-size:14px; }
 </style>
 </head>
@@ -73,6 +85,8 @@
     </header>
     <div class="bar"><div id="progress" style="width:0"></div></div>
     <div id="app"></div>
+    <div class="toggles"><button class="btn" id="mist-btn">Câu hay sai</button></div>
+    <div id="mist" class="card mist hidden"></div>
     <p class="small" style="margin-top:16px">Tiến trình được lưu trong trình duyệt. Câu sai hoặc "Chưa nhớ" sẽ quay lại cuối danh sách cho tới khi đúng hết.
       <button class="btn" id="reset" style="margin-left:6px">Làm lại từ đầu</button></p>
   </div>
@@ -166,9 +180,88 @@
     return s && s.queue ? s : null;
   }
   function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
-  function fresh() {
-    return { queue: shuffle(DATA.items.map(function (q) { return q.id; })), mastered: [], attempts: 0, wrong: 0, answered: null };
+  // ids: chỉ luyện một số câu (vd. câu hay sai); mặc định tất cả
+  function fresh(ids) {
+    var all = DATA.items.map(function (q) { return q.id; });
+    var pick = ids && ids.length ? ids : all;
+    return { queue: shuffle(pick.slice()), mastered: all.filter(function (id) { return pick.indexOf(id) < 0; }),
+             attempts: 0, wrong: 0, answered: null, subset: !!(ids && ids.length) };
   }
+
+  // thống kê lỗi theo câu, không bị xoá khi làm lại: {id: {wrong, forgot, picks: {B: 2}}}
+  var STATS_KEY = "aptis-stats:" + DATA.slug;
+  var stats = {};
+  try { stats = JSON.parse(localStorage.getItem(STATS_KEY)) || {}; } catch (e) {}
+  function stat(id) { return stats[id] || (stats[id] = { wrong: 0, forgot: 0, picks: {} }); }
+  function saveStats() { try { localStorage.setItem(STATS_KEY, JSON.stringify(stats)); } catch (e) {} }
+  function errCount(id) { var s = stats[id]; return s ? s.wrong + s.forgot : 0; }
+  function mistakeIds() {
+    return DATA.items.map(function (q) { return q.id; })
+      .filter(function (id) { return errCount(id) > 0; })
+      .sort(function (a, b) { return errCount(b) - errCount(a) || a - b; });
+  }
+
+  function renderMistakes(box) {
+    box.innerHTML = "";
+    var ids = mistakeIds();
+    var head = el("div", "mist-head");
+    head.appendChild(el("h3", null, "Câu hay sai (" + ids.length + ")"));
+    if (ids.length) {
+      var practice = el("button", "btn primary", "Luyện riêng các câu này");
+      practice.onclick = function () {
+        if (state.queue.length && !state.subset && !confirm("Bỏ lượt đang làm để luyện riêng " + ids.length + " câu hay sai?")) return;
+        state = fresh(ids); save(); render();
+        window.scrollTo(0, 0);
+      };
+      var clear = el("button", "btn", "Xoá thống kê");
+      clear.onclick = function () {
+        if (!confirm("Xoá toàn bộ thống kê câu sai của đề này?")) return;
+        stats = {}; saveStats(); renderMistakes(box); updateMistBtn();
+      };
+      var bt = el("div", "toggles"); bt.style.marginTop = "0";
+      bt.appendChild(practice); bt.appendChild(clear);
+      head.appendChild(bt);
+    }
+    box.appendChild(head);
+    if (!ids.length) { box.appendChild(el("p", "small", "Chưa có câu nào sai hoặc bị đánh dấu Chưa nhớ.")); return; }
+    var t = el("table");
+    var hr = el("tr");
+    ["Câu hỏi", "Sai", "Chưa nhớ"].forEach(function (h, i) { hr.appendChild(el("th", i ? "n" : null, h)); });
+    t.appendChild(hr);
+    ids.forEach(function (id) {
+      var q = byId[id], st = stats[id];
+      var tr = el("tr"), td = el("td");
+      td.appendChild(el("div", null, q.question));
+      var ao = q.options.filter(function (o) { return o.key === q.answer; })[0];
+      td.appendChild(el("div", "ans", "✓ " + q.answer + (ao ? ". " + ao.text : "")));
+      var picked = Object.keys(st.picks || {}).map(function (k) {
+        var o = q.options.filter(function (x) { return x.key === k; })[0];
+        return k + (o ? ". " + o.text : "") + " (" + st.picks[k] + "×)";
+      });
+      if (picked.length) td.appendChild(el("div", "picked", "Đã chọn nhầm: " + picked.join(", ")));
+      var det = el("details");
+      det.appendChild(el("summary", null, "Nghe lại / xem nội dung"));
+      if (q.audio) { var au = el("audio"); au.controls = true; au.preload = "none"; au.src = q.audio; au.style.width = "100%"; det.appendChild(au); }
+      det.appendChild(el("div", null, q.transcript || ""));
+      det.appendChild(el("div", "small", q.translation || ""));
+      td.appendChild(det);
+      tr.appendChild(td);
+      tr.appendChild(el("td", "n cnt", String(st.wrong || 0)));
+      tr.appendChild(el("td", "n", String(st.forgot || 0)));
+      t.appendChild(tr);
+    });
+    box.appendChild(t);
+  }
+
+  var mistBox = document.getElementById("mist");
+  var mistBtn = document.getElementById("mist-btn");
+  function updateMistBtn() { mistBtn.textContent = "Câu hay sai (" + mistakeIds().length + ")"; }
+  mistBox.classList.add("hidden"); mistBtn.classList.remove("on");
+  mistBtn.onclick = function () {
+    var open = mistBox.classList.toggle("hidden") === false;
+    mistBtn.classList.toggle("on", open);
+    if (open) renderMistakes(mistBox);
+  };
 
   var state = load() || fresh();
   // bỏ id không còn tồn tại / bổ sung câu mới
@@ -189,7 +282,7 @@
     var total = DATA.items.length, m = state.mastered.length;
     document.getElementById("progress").style.width = (total ? (m / total * 100) : 0) + "%";
     document.getElementById("stats").textContent =
-      "Đã thuộc " + m + "/" + total + " · Còn lại " + state.queue.length + " · Sai " + state.wrong;
+      (state.subset ? "Luyện câu hay sai · " : "") + "Đã thuộc " + m + "/" + total + " · Còn lại " + state.queue.length + " · Sai " + state.wrong;
   }
 
   function toggle(label, panel) {
@@ -200,15 +293,22 @@
 
   function render() {
     updateStats();
+    updateMistBtn();
+    if (!mistBox.classList.contains("hidden")) renderMistakes(mistBox);
     app.innerHTML = "";
     if (!state.queue.length && !state.answered) {
       var d = el("div", "card done");
       d.appendChild(el("h2", null, "🎉 Hoàn thành 100%!"));
-      d.appendChild(el("p", null, "Bạn đã trả lời đúng tất cả " + DATA.items.length + " câu. Tổng lượt làm: " + state.attempts + ", số lần sai: " + state.wrong + "."));
+      d.appendChild(el("p", null, "Bạn đã trả lời đúng tất cả " + (state.subset ? "các câu hay sai" : DATA.items.length + " câu") +
+        ". Tổng lượt làm: " + state.attempts + ", số lần sai: " + state.wrong + "."));
       var r = el("button", "btn primary", "Luyện lại từ đầu");
       r.onclick = reset;
       d.appendChild(r);
       app.appendChild(d);
+      var list = el("div", "card mist");
+      renderMistakes(list);
+      app.appendChild(list);
+      mistBox.classList.add("hidden"); mistBtn.classList.remove("on");
       return;
     }
     var q = byId[state.answered ? state.answered.id : state.queue[0]];
@@ -284,6 +384,7 @@
       var a = state.answered;
       var wasCorrect = a && a.key === q.answer;
       if (forgot) {
+        stat(q.id).forgot++; saveStats();
         if (wasCorrect) {
           state.mastered = state.mastered.filter(function (x) { return x !== q.id; });
           state.queue.unshift(q.id);
@@ -303,8 +404,15 @@
       state.attempts++;
       state.answered = { id: q.id, key: key };
       if (key === q.answer) { state.queue.shift(); state.mastered.push(q.id); }
-      else state.wrong++;
+      else {
+        state.wrong++;
+        var st = stat(q.id);
+        st.wrong++;
+        st.picks[key] = (st.picks[key] || 0) + 1;
+        saveStats();
+      }
       save();
+      updateMistBtn();
       showAnswered(key);
       updateStats();
     }
