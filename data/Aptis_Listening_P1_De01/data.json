@@ -23,6 +23,10 @@
    "transcript": "My phone is not working can you remind me of the number I think it starts with 20 or 10 or 30 something is it 1020 or 3010 I really need to order that new Gadget thanks for your help",
    "translation": "Điện thoại của tôi không hoạt động, bạn có thể nhắc tôi nhớ số không. Tôi nghĩ nó bắt đầu bằng 20 hoặc 10 hoặc 30 gì đó là 1020 hay 3010. Tôi thực sự cần đặt mua Tiện ích mới đó, cảm ơn sự giúp đỡ của bạn",
    "question_vi": "Một người đàn ông gọi đến teleshop. Số điện thoại của teleshop là gì?",
+   "extra": [
+    "120030",
+    "310200"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q01.mp3"
   },
   {
@@ -47,6 +51,10 @@
    "transcript": "Hello I would like to buy a top please sure do you have anything particular in mind I like the design of that green one over there do you have it in blue what size are you I am wearing large let me see we have that one in blue but small the red and black ones however are available in large red is not my cup of tea well I will go with the other option then",
    "translation": "Xin chào, tôi muốn mua một chiếc áo, vui lòng chắc chắn bạn có ý tưởng gì đặc biệt không. Tôi thích thiết kế của chiếc màu xanh lá cây đằng kia, bạn có màu xanh lam, bạn cỡ bao nhiêu. Tôi đang mặc cỡ lớn, để tôi xem chúng tôi có chiếc màu xanh nhưng nhỏ, màu đỏ và đen tuy nhiên có sẵn màu đỏ lớn không phải là tách trà của tôi. Tôi sẽ chọn lựa chọn khác.",
    "question_vi": "Một người đàn ông đang nói chuyện với một trợ lý mua sắm. Anh ấy định mua áo màu gì?",
+   "extra": [
+    "Red",
+    "White"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q02.mp3"
   },
   {
@@ -71,6 +79,10 @@
    "transcript": "Hi Rose it's Ahmed what time should we meet for dinner tonight how about we meet at quarter past 7:08 I just remembered I have a meeting ending at a half past 7:30 let's make it 2:45 instead so we could have 15 minutes to travel does that work for you",
    "translation": "Xin chào Rose, đây là Ahmed. Chúng ta nên gặp nhau vào lúc mấy giờ để ăn tối tối nay. Hay là chúng ta gặp nhau lúc 7:08 mười lăm. Tôi vừa nhớ ra rằng tôi có một cuộc họp kết thúc lúc 7:30 rưỡi, thay vào đó hãy hẹn lúc 2:45 để chúng ta có 15 phút di chuyển, điều đó có phù hợp với bạn không?",
    "question_vi": "Hai người đang nói về việc gặp nhau để ăn tối. Ahmed gặp Rose lúc mấy giờ?",
+   "extra": [
+    "Eight o'clock",
+    "Seven o'clock"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q03.mp3"
   },
   {
@@ -95,6 +107,10 @@
    "transcript": "Hey I just wanted to tell you about my new car it's a small one perfect for my needs I got it for a great price only $3,250 can you believe it I was looking at bigger models too but they were way more expensive around $3,550 or even $4,250 I'm really happy with my choice",
    "translation": "Này, tôi chỉ muốn nói với bạn về chiếc xe mới của tôi, nó là một chiếc xe nhỏ hoàn hảo cho nhu cầu của tôi. Tôi mua nó với giá rất tốt chỉ 3.250 đô la, bạn có tin được không? Tôi cũng đang xem những mẫu xe lớn hơn nhưng chúng đắt hơn rất nhiều, khoảng 3.550 đô la hoặc thậm chí 4.250 đô la. Tôi thực sự hài lòng với lựa chọn của mình",
    "question_vi": "Một người gọi cho một người bạn về chiếc xe mới của anh ấy. Chiếc xe nhỏ đó giá bao nhiêu?",
+   "extra": [
+    "2250 pounds",
+    "3050 pounds"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q04.mp3"
   },
   {
@@ -119,6 +135,10 @@
    "transcript": "I just got back from an amazing vacation with Lisa we've been friends for years and this trip really brought us closer I can't imagine going with anyone else some people think we look like mother and daughter because we care for each other so much but it's really just best friends hanging out",
    "translation": "Tôi vừa trở về sau một kỳ nghỉ tuyệt vời với Lisa, chúng tôi đã là bạn trong nhiều năm và chuyến đi này thực sự đã đưa chúng tôi đến gần nhau hơn. Tôi không thể tưởng tượng được việc đi cùng ai khác một số người nghĩ chúng tôi trông giống mẹ và con gái vì chúng tôi quan tâm đến nhau rất nhiều nhưng thực ra đó chỉ là bạn thân đi chơi thôi",
    "question_vi": "Hãy nghe một người phụ nữ nói về người mà cô ấy biết. Mối quan hệ của họ là gì?",
+   "extra": [
+    "Sisters",
+    "Colleagues"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q05.mp3"
   },
   {
@@ -143,6 +163,10 @@
    "transcript": "Hi it's me I wanted to confirm where we're meeting today I thought we agreed to meet at the park right it's a nice place to relax and catch up the station would be too crowded and the university is a bit far for me what time should I meet you there",
    "translation": "Xin chào, tôi là tôi, tôi muốn xác nhận nơi chúng ta gặp nhau hôm nay. Tôi nghĩ chúng ta đã đồng ý gặp nhau ở công viên, đây là một nơi tuyệt vời để thư giãn và bắt kịp ga. Sẽ quá đông đúc và trường đại học thì hơi xa đối với tôi. Tôi nên gặp bạn ở đó vào lúc nào?",
    "question_vi": "Một người đàn ông đang gọi em gái mình. Họ sẽ gặp nhau ở đâu?",
+   "extra": [
+    "At the cafe",
+    "At the library"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q06.mp3"
   },
   {
@@ -167,6 +191,10 @@
    "transcript": "Hey could you do me a favor my sister is waiting outside and I need you to give her my book she's the one who is short and has straight hair so you can't miss her I also think she's wearing a blue jacket today if you see her just hand it to her and I'll be so grateful thanks for helping me out",
    "translation": "Này bạn có thể giúp tôi một việc Em gái tôi đang đợi bên ngoài và tôi cần bạn đưa cho cô ấy cuốn sách của tôi. Cô ấy là người thấp và có mái tóc thẳng nên bạn không thể bỏ lỡ cô ấy. Tôi cũng nghĩ hôm nay cô ấy mặc áo khoác màu xanh nếu bạn nhìn thấy cô ấy, chỉ cần đưa nó cho cô ấy và tôi sẽ rất biết ơn, cảm ơn vì đã giúp đỡ tôi",
    "question_vi": "Jana đang nói chuyện với bạn cô ấy. Em gái của Jana trông như thế nào?",
+   "extra": [
+    "Tall",
+    "Long hair"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q07.mp3"
   },
   {
@@ -191,6 +219,10 @@
    "transcript": "On our family trip last summer we had such a great time my wife really enjoys photography so when we went walking together in the Parks she spent a lot of time taking pictures of the beautiful landscapes well at least she is not crazy about shopping",
    "translation": "Trong chuyến du lịch cùng gia đình vào mùa hè năm ngoái, chúng tôi đã có khoảng thời gian tuyệt vời, vợ tôi thực sự thích chụp ảnh nên khi chúng tôi cùng nhau đi dạo trong Công viên, cô ấy đã dành rất nhiều thời gian để chụp những phong cảnh đẹp, ít nhất cô ấy không cuồng mua sắm",
    "question_vi": "Một người đàn ông đang nói về chuyến đi của gia đình anh ấy. Vợ của người đàn ông thích gì?",
+   "extra": [
+    "swimming",
+    "cooking"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q08.mp3"
   },
   {
@@ -215,6 +247,10 @@
    "transcript": "I can't wait for the concert this weekend it's going to be such an exciting event the Highlight ending will be the city's favorite Group performing on stage I've heard they have some amazing songs planned there will also be a fireworks performance to celebrate before that and I'm sure the orchestra will do some singing as well it's going to be a night to remember",
    "translation": "Tôi rất mong đợi buổi hòa nhạc vào cuối tuần này. Đây sẽ là một sự kiện thú vị Phần kết thúc của Highlight sẽ là Nhóm được yêu thích của thành phố biểu diễn trên sân khấu. Tôi nghe nói họ đã lên kế hoạch cho một số bài hát tuyệt vời, trước đó cũng sẽ có màn trình diễn pháo hoa để ăn mừng và tôi chắc chắn rằng dàn nhạc cũng sẽ hát vài bài. Đây sẽ là một đêm đáng nhớ",
    "question_vi": "Một người đàn ông đang nói về buổi hòa nhạc ở thành phố. Buổi hòa nhạc sẽ kết thúc như thế nào?",
+   "extra": [
+    "A speech from the mayor",
+    "A dance show"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q09.mp3"
   },
   {
@@ -239,6 +275,10 @@
    "transcript": "I just wanted to check in and see how you're doing it's been a while since we last caught up how about we grab a drink later I know a great new place that has very nice tea you should definitely try it next time you visit me text me back",
    "translation": "Tôi chỉ muốn kiểm tra xem bạn thế nào đã lâu rồi kể từ lần cuối chúng ta gặp nhau thì sao chúng ta không đi uống nước sau nhé. Tôi biết một địa điểm mới tuyệt vời có trà rất ngon, bạn chắc chắn nên thử lần sau khi bạn ghé thăm tôi, nhắn tin lại cho tôi nhé",
    "question_vi": "Nghe một tin nhắn. Tại sao Vincent gọi James?",
+   "extra": [
+    "To say sorry",
+    "To ask for money"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q10.mp3"
   },
   {
@@ -263,6 +303,10 @@
    "transcript": "Hey Max it's Anna I wanted to ask you for a favor this afternoon I have to stay late at the office to finish some work could you please pick up my kids from school after that I know you'll want to hang out with your friends so feel free to take them along I really appreciate your help",
    "translation": "Này Max là Anna Tôi muốn nhờ bạn một việc chiều nay Tôi phải ở lại văn phòng muộn để hoàn thành một số công việc. Bạn có thể vui lòng đón con tôi tan học sau đó không. Tôi biết bạn sẽ muốn đi chơi với bạn bè nên cứ thoải mái đưa chúng đi cùng Tôi thực sự đánh giá cao sự giúp đỡ của bạn",
    "question_vi": "Anna gọi anh trai cô ấy là Max. Cô ấy phải làm gì?",
+   "extra": [
+    "Go to the doctor",
+    "Cook dinner"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q11.mp3"
   },
   {
@@ -287,6 +331,10 @@
    "transcript": "I've always loved science but there was a moment that really encouraged me to become a scientist I remember when I was a child I found a large Stone during a school trip it sparked my curiosity about geology my mother also inspired me to explore my interests in science of course I use the computer a lot now for my research but that stone was the beginning",
    "translation": "Tôi luôn yêu thích khoa học nhưng có một khoảnh khắc thực sự khuyến khích tôi trở thành một nhà khoa học. Tôi nhớ khi còn nhỏ tôi đã tìm thấy một hòn đá lớn trong một chuyến đi học, nó khơi dậy sự tò mò của tôi về địa chất. mẹ tôi cũng truyền cảm hứng cho tôi khám phá sở thích của tôi về khoa học tất nhiên bây giờ tôi sử dụng máy tính rất nhiều cho nghiên cứu của mình nhưng hòn đá đó là khởi đầu",
    "question_vi": "Một người phụ nữ đang nói về công việc của mình. Điều gì đã khuyến khích cô trở thành một nhà khoa học?",
+   "extra": [
+    "Her teacher",
+    "A science book"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q12.mp3"
   },
   {
@@ -311,6 +359,10 @@
    "transcript": "Last year I had an amazing trip one of the best things I enjoyed was going cycling in the countryside the views were stunning and it felt great to be outdoors I also went for a walk a few times but cycling really allowed me to explore more areas we even had a picnic one day which was lovely too",
    "translation": "Năm ngoái tôi đã có một chuyến đi tuyệt vời, một trong những điều tuyệt vời nhất mà tôi thích là đạp xe ở vùng nông thôn, quang cảnh rất đẹp và cảm giác thật tuyệt khi được ở ngoài trời. Tôi cũng đã đi dạo một vài lần nhưng việc đạp xe thực sự cho phép tôi khám phá nhiều khu vực hơn mà chúng tôi thậm chí còn có một chuyến dã ngoại vào một ngày nào đó, điều đó cũng thật đáng yêu",
    "question_vi": "Một người đàn ông đang kể về chuyến đi của mình. Năm ngoái anh ấy đã tận hưởng điều gì?",
+   "extra": [
+    "Go swimming",
+    "Go fishing"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q13.mp3"
   },
   {
@@ -335,6 +387,10 @@
    "transcript": "I've been late several times recently sometimes I oversleep but that wasn't the case today I actually left on time but I missed the train at the last minute it's always the main reason I end up late I tried to double-check everything I need so forgetting something isn't usually an issue for me either",
    "translation": "Gần đây tôi đã đến muộn vài lần, đôi khi tôi ngủ quên nhưng hôm nay không phải như vậy. Tôi thực sự đã khởi hành đúng giờ nhưng tôi đã lỡ chuyến tàu vào phút cuối, đó luôn là lý do chính khiến tôi đến muộn. Tôi đã cố gắng kiểm tra kỹ mọi thứ mình cần nên việc quên thứ gì đó thường không phải là vấn đề đối với tôi",
    "question_vi": "Hãy nghe một người phụ nữ giải thích lý do tại sao cô ấy đến muộn. Lý do chính khiến cô ấy đến muộn là gì?",
+   "extra": [
+    "Missed the bus",
+    "Got lost"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q14.mp3"
   },
   {
@@ -359,6 +415,10 @@
    "transcript": "I sold my old music player last week I considered selling it for around $60 since it was in good condition but I thought $40 would be a bit too low I finally sold it for $50 which felt just right no I have a bit of extra cash to save or spend on something new",
    "translation": "Tôi đã bán máy nghe nhạc cũ của mình vào tuần trước. Tôi đã cân nhắc việc bán nó với giá khoảng 60 đô la vì nó vẫn trong tình trạng tốt nhưng tôi nghĩ 40 đô la thì hơi quá thấp. Cuối cùng tôi đã bán nó với giá 50 đô la, điều đó có vẻ vừa phải. Tôi có thêm một chút tiền mặt để tiết kiệm hoặc chi tiêu cho một thứ gì đó mới",
    "question_vi": "Nghe một người bạn nói về việc bán máy nghe nhạc của cô ấy. Cô ấy đã bán nó với giá bao nhiêu?",
+   "extra": [
+    "45 dollars",
+    "55 dollars"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q15.mp3"
   },
   {
@@ -383,6 +443,10 @@
    "transcript": "I'm looking at flights and comparing prices the morning flight I want is 350 lb which is a bit more than the 300 lb one later in the day there's also another option that cost $400 350 lb one since it leaves at the right time for me",
    "translation": "Tôi đang xem các chuyến bay và so sánh giá chuyến bay buổi sáng tôi muốn là 350 lb, nhiều hơn một chút so với chuyến bay 300 lb sau đó trong ngày. Ngoài ra còn có một lựa chọn khác có giá 400 USD hoặc 350 lb một chuyến vì nó khởi hành vào đúng thời điểm đối với tôi",
    "question_vi": "Hãy nghe một người phụ nữ hỏi về chuyến bay. Chuyến bay vào buổi sáng có giá bao nhiêu?",
+   "extra": [
+    "250 pounds",
+    "450 pounds"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q16.mp3"
   },
   {
@@ -407,6 +471,10 @@
    "transcript": "This morning was rough at the station I thought the train would leave around 9:00 but I heard it would be delayed it finally departed at 9:30 though some people said it might be even later usually if it's delayed it could leave as late as 10:00 I'm glad it didn't take that long today",
    "translation": "Sáng nay ở ga rất khó khăn. Tôi tưởng tàu sẽ khởi hành vào khoảng 9 giờ nhưng tôi nghe nói nó sẽ bị trễ. Cuối cùng nó khởi hành lúc 9:30 mặc dù một số người nói rằng thậm chí có thể còn muộn hơn nếu bị trễ thì nó có thể khởi hành muộn nhất là 10:00. Tôi rất vui vì hôm nay không mất nhiều thời gian như vậy",
    "question_vi": "Hãy nghe một người đàn ông kể về chuyến hành trình bằng tàu hỏa của họ. Tàu khởi hành lúc mấy giờ?",
+   "extra": [
+    "8:30",
+    "10:30"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q17.mp3"
   },
   {
@@ -431,6 +499,10 @@
    "transcript": "Hey it's Alice I think I might have left something at your house I had my book with me it's in my backpack my laptop's here too but I can't find my phone anywhere did you happen to see it after I left I think I might have left it on the table",
    "translation": "Xin chào, là Alice, tôi nghĩ có thể tôi đã để quên thứ gì đó ở nhà bạn. Tôi mang theo cuốn sách, nó ở trong ba lô, máy tính xách tay của tôi cũng ở đây nhưng tôi không thể tìm thấy điện thoại của mình ở đâu cả, bạn có tình cờ nhìn thấy nó sau khi tôi rời đi không? Tôi nghĩ có thể tôi đã để nó trên bàn",
    "question_vi": "Alice đang gọi cho bạn cô ấy. Cô ấy đã mất gì?",
+   "extra": [
+    "A key",
+    "A wallet"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q18.mp3"
   },
   {
@@ -455,6 +527,10 @@
    "transcript": "Hello this is the doctor's office calling to change your appointment I wanted to let you know that the new appointment is on Thursday the 13th I understand you might have been expecting it to be on Friday the 14th but we're all off this day due to the National dentist holiday please let us know if that works for you",
    "translation": "Xin chào, đây là văn phòng bác sĩ gọi để thay đổi cuộc hẹn của bạn Tôi muốn thông báo cho bạn biết rằng cuộc hẹn mới là vào Thứ Năm ngày 13. Tôi hiểu rằng bạn có thể đã mong đợi nó diễn ra vào Thứ Sáu ngày 14 nhưng hôm nay chúng tôi đều nghỉ do ngày lễ nha sĩ Quốc gia, vui lòng cho chúng tôi biết nếu điều đó phù hợp với bạn",
    "question_vi": "Văn phòng bác sĩ Smith gọi điện để thay đổi cuộc hẹn. Cuộc hẹn vào ngày nào?",
+   "extra": [
+    "On Friday 13th",
+    "On Thursday 14th"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q19.mp3"
   },
   {
@@ -479,6 +555,10 @@
    "transcript": "Don't worry there's also a dance class scheduled in the evening and of course you can always go shopping in the nearby stores later on but bear in mind the store will only open in the morning",
    "translation": "Đừng lo lắng, còn có lớp học khiêu vũ vào buổi tối và tất nhiên bạn luôn có thể đi mua sắm ở các cửa hàng gần đó sau đó nhưng hãy nhớ rằng cửa hàng sẽ chỉ mở cửa vào buổi sáng",
    "question_vi": "Một hướng dẫn viên du lịch đang nói về danh sách các hoạt động trong kỳ nghỉ. Buổi chiều mọi người có thể làm gì?",
+   "extra": [
+    "Go swimming",
+    "Visit a museum"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q20.mp3"
   },
   {
@@ -503,6 +583,10 @@
    "transcript": "Hi I just wanted to call quickly before we head off my family is all here to see me and we're standing in this big area with lots of houses and apartments it's a nice residential area with some trees and small shops nearby we're not right by the university but it's close enough there are lots of other students and families here too saying goodbye it feels a bit emotional but I'm also really excited to start this New Journey",
    "translation": "Xin chào, tôi chỉ muốn gọi nhanh trước khi chúng tôi khởi hành. Tất cả gia đình tôi đều ở đây để gặp tôi và chúng tôi đang đứng trong khu vực rộng lớn với rất nhiều ngôi nhà và căn hộ, đó là một khu dân cư đẹp với một số cây xanh và cửa hàng nhỏ gần đó. Chúng tôi không ở ngay cạnh trường đại học nhưng nó cũng đủ gần, có rất nhiều sinh viên và gia đình khác ở đây cũng đang nói lời tạm biệt, tôi cảm thấy hơi xúc động nhưng tôi cũng thực sự rất hào hứng khi bắt đầu Hành trình mới này",
    "question_vi": "Helen đang gọi điện cho một người bạn để hỏi về nơi mà cả gia đình cô đang đứng khi tiễn cô đến trường đại học. Họ đang đứng ở đâu?",
+   "extra": [
+    "Train station",
+    "City centre"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q21.mp3"
   },
   {
@@ -527,6 +611,10 @@
    "transcript": "I remember having it when I sat at a small table in the corner I checked the counter and near the door before I left but I must have forgotten it in the corner after all could you please look that",
    "translation": "Tôi nhớ có nó khi tôi ngồi ở một chiếc bàn nhỏ trong góc, tôi kiểm tra quầy và gần cửa trước khi tôi rời đi nhưng chắc chắn là tôi đã để quên nó trong góc, bạn có thể vui lòng xem nó được không?",
    "question_vi": "Nghe một cô gái gọi đến quán cà phê. Cô ấy đã quên cái gì và để nó ở đâu?",
+   "extra": [
+    "under the table",
+    "by the window"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q22.mp3"
   },
   {
@@ -551,6 +639,10 @@
    "transcript": "I really like to walk in the mornings every day I take a nice walk before my classes start I could walk around my neighborhood but I prefer going to college it's a great way for me to get a bit of exercise and clear my mind before the day begins the campus is so peaceful in the mornings",
    "translation": "Tôi thực sự thích đi bộ vào buổi sáng mỗi ngày Tôi đi bộ một chút trước khi lớp học bắt đầu Tôi có thể đi dạo quanh khu phố của mình nhưng tôi thích đi học đại học hơn đó là cách tuyệt vời để tôi tập thể dục một chút và thư giãn đầu óc trước khi ngày bắt đầu. Khuôn viên trường thật yên bình vào buổi sáng",
    "question_vi": "Hãy nghe Anna nói về thói quen của cô ấy. Anna đi dạo ở đâu mỗi sáng?",
+   "extra": [
+    "beach",
+    "gym"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q23.mp3"
   },
   {
@@ -575,6 +667,10 @@
    "transcript": "All right let me go over the list of clients for today we've got Carl Harry and Matthew all from the UK Leslie who's from the US is also scheduled for an appointment then we have two more clients coming in from France so that gives us one American a few from the UK and the rest from France it looks like everything's in order",
    "translation": "Được rồi, hãy để tôi xem qua danh sách khách hàng hôm nay chúng tôi có Carl Harry và Matthew, tất cả đều đến từ Vương quốc Anh. Leslie đến từ Mỹ cũng đã được lên lịch cho một cuộc hẹn, sau đó chúng tôi có thêm hai khách hàng đến từ Pháp nên chúng tôi có một người Mỹ, một số đến từ Vương quốc Anh và số còn lại đến từ Pháp, có vẻ như mọi thứ đều ổn",
    "question_vi": "Nhân viên lễ tân đang kiểm tra danh sách khách hàng của một phòng khám. Có bao nhiêu khách hàng là người Mỹ?",
+   "extra": [
+    "Four",
+    "None"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q24.mp3"
   },
   {
@@ -599,6 +695,10 @@
    "transcript": "I've always loved the ocean that is why I initially wanted to install a big window that looks out to the river at my house but now my husband and I realized it was too big and now too much Sunshine got in my car got heated and the computer next to the window always seems like it would explode I have no choice but to change it into another window that can closed entirely",
    "translation": "Tôi luôn yêu thích đại dương nên ban đầu tôi muốn lắp một cửa sổ lớn nhìn ra sông ở nhà nhưng bây giờ tôi và chồng nhận ra rằng nó quá lớn và bây giờ quá nhiều Ánh nắng chiếu vào xe tôi nóng lên và chiếc máy tính cạnh cửa sổ luôn như muốn nổ tung. Tôi không còn cách nào khác là phải thay một cửa sổ khác có thể đóng lại hoàn toàn.",
    "question_vi": "Một người phụ nữ đang nói về ngôi nhà của mình. Cô ấy sẽ thay đổi gì trong ngôi nhà của họ?",
+   "extra": [
+    "The door",
+    "The roof"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q25.mp3"
   },
   {
@@ -623,6 +723,10 @@
    "transcript": "Good morning Alex I've just finished reading your thesis and I must say it's very well done you've put a lot of effort into it thank you Professor I'm glad you liked it I worked hard on it your research is good and your arguments are clear student conference wow really that sounds exciting but I'm not sure how that works could you tell me more about it of course the conference is a great opportunity to share your findings with a wider audience you would prepare a short presentation around 10 to 15 minutes and then answer some questions from the audience it's a good way to get feedback and gain experience speaking publicly that sounds interesting I will check it out thank you so much",
    "translation": "Chào buổi sáng Alex Tôi vừa đọc xong luận văn của bạn và tôi phải nói rằng nó rất hay bạn đã nỗ lực rất nhiều, cảm ơn Giáo sư Tôi rất vui vì bạn thích nó Tôi đã làm việc chăm chỉ cho nó Nghiên cứu của bạn rất tốt và lập luận của bạn rất rõ ràng hội nghị sinh viên wow thực sự nghe rất thú vị nhưng tôi không chắc nó hoạt động như thế nào bạn có thể cho tôi biết thêm về nó tất nhiên hội nghị là một cơ hội tuyệt vời để chia sẻ những phát hiện của bạn với nhiều đối tượng hơn bạn sẽ chuẩn bị một bài thuyết trình ngắn khoảng 10 đến 15 phút và sau đó trả lời một số câu hỏi từ khán giả đó là một cách hay để nhận phản hồi và tích lũy kinh nghiệm nói chuyện trước công chúng nghe có vẻ thú vị. Tôi sẽ kiểm tra nó, cảm ơn bạn rất nhiều",
    "question_vi": "Một giáo sư đang nói chuyện với sinh viên của mình. Giáo sư yêu cầu sinh viên của mình làm gì?",
+   "extra": [
+    "Read more books",
+    "Change the topic"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q26.mp3"
   },
   {
@@ -647,6 +751,10 @@
    "transcript": "Hey what's your favorite activity I probably say watching films it's so much fun nice where do you like to watch them I really enjoy going to the theater it's my favorite form of entertainment that sounds great oh that's because you are boring boring come on books can be exciting too maybe but films are more entertaining for me",
    "translation": "Này hoạt động yêu thích của bạn là gì Tôi có thể nói xem phim nó rất vui rất hay bạn thích xem chúng ở đâu Tôi thực sự thích đi đến rạp chiếu phim đó là hình thức giải trí yêu thích của tôi nghe có vẻ tuyệt vời ồ đó là vì bạn nhàm chán nhàm chán thôi nào đọc sách cũng có thể thú vị nhưng phim mang tính giải trí cao hơn đối với tôi",
    "question_vi": "Hai người bạn đang nói về những hoạt động yêu thích của họ. Hình thức giải trí yêu thích của phụ nữ là gì?",
+   "extra": [
+    "Watching TV",
+    "Listening to music"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q27.mp3"
   },
   {
@@ -671,6 +779,10 @@
    "transcript": "I'm usually exhausted because my job can be really tough I always look forward to 5:00 so I can finally check out and head home luckily I live close by which makes my evening routine a bit easier I like to go for a run after work to clear my mind and shake off the stress it helps me feel refreshed and ready for the next day",
    "translation": "Tôi thường kiệt sức vì công việc của tôi có thể rất khó khăn. Tôi luôn mong đến 5 giờ chiều để cuối cùng tôi có thể trả phòng và may mắn về nhà. Tôi sống gần đó, điều này khiến thói quen buổi tối của tôi dễ dàng hơn một chút. Tôi thích chạy bộ sau giờ làm để đầu óc tỉnh táo và rũ bỏ căng thẳng. Nó giúp tôi cảm thấy sảng khoái và sẵn sàng cho ngày hôm sau",
    "question_vi": "Một người đàn ông đang nói về thói quen của mình sau giờ làm việc. Người đàn ông sẽ làm gì sau giờ làm việc?",
+   "extra": [
+    "Goes swimming",
+    "Watches TV"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q28.mp3"
   },
   {
@@ -695,6 +807,10 @@
    "transcript": "Hey it's Jorge I wanted to check in about our plans for the weekend I'll be busy in the morning but how about we meet at 11:30 for lunch the football match starts at 1:00 p.m. and since it takes about 30 minutes to drive there will have just enough time to grab something to eat after the match we can head back to my place and play some video games it's going to be a fun day let me know if that works for you can't wait",
    "translation": "Này, Jorge đây, tôi muốn kiểm tra kế hoạch của chúng ta vào cuối tuần. Tôi sẽ bận vào buổi sáng nhưng chúng ta gặp nhau lúc 11:30 để ăn trưa nhé, trận bóng đá bắt đầu lúc 1:00 chiều. và vì mất khoảng 30 phút lái xe nên sẽ có đủ thời gian để mua thứ gì đó để ăn sau trận đấu, chúng ta có thể quay lại chỗ của tôi và chơi một số trò chơi điện tử. Đây sẽ là một ngày vui vẻ. Hãy cho tôi biết nếu điều đó phù hợp với bạn. Nóng lòng chờ đợi",
    "question_vi": "Jorge đang gọi điện cho bạn mình để thông báo về kế hoạch cuối tuần của họ. Trận đấu bóng đá bắt đầu lúc mấy giờ?",
+   "extra": [
+    "11:30 a.m",
+    "3 p.m"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q29.mp3"
   },
   {
@@ -719,6 +835,10 @@
    "transcript": "What do you remember most about our school days honestly I don't remember much I remember that I was terrible at math it was my worst subject also I remember that you were really good at history that's right I loved history all those stories and events were so fascinating",
    "translation": "Thành thật mà nói, bạn nhớ điều gì nhất về thời đi học của chúng ta Tôi không nhớ nhiều lắm Tôi nhớ rằng tôi học môn toán rất tệ, đó cũng là môn học tệ nhất của tôi Tôi nhớ rằng bạn rất giỏi môn lịch sử đúng vậy Tôi yêu lịch sử tất cả những câu chuyện và sự kiện đó thật hấp dẫn",
    "question_vi": "Một người đàn ông và một người phụ nữ đang kể về thời đi học cũ của họ. Điều yêu thích của người đàn ông ở trường học là gì?",
+   "extra": [
+    "Art classes",
+    "Music classes"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q30.mp3"
   },
   {
@@ -743,6 +863,10 @@
    "transcript": "I'm excited to introduce you to our Charming small town right here in the Town Square you'll find local shops cozy cafes and a beautiful Fountain where people gather to relax this square is the heart of our community often filled with cool events like farmers markets and live music currently there are 10,000 people living in this town as we explore you'll see the unique blend of history and Modern Life that makes our town so special",
    "translation": "Tôi rất vui được giới thiệu với bạn thị trấn nhỏ quyến rũ của chúng tôi ngay tại Quảng trường Thị trấn, bạn sẽ tìm thấy các cửa hàng địa phương, quán cà phê ấm cúng và Đài phun nước xinh đẹp, nơi mọi người tụ tập để thư giãn, quảng trường này là trung tâm cộng đồng của chúng tôi, nơi thường xuyên diễn ra các sự kiện thú vị như chợ nông sản và nhạc sống. Hiện có 10.000 người sống ở thị trấn này khi chúng tôi khám phá, bạn sẽ thấy sự pha trộn độc đáo giữa lịch sử và Cuộc sống hiện đại khiến thị trấn của chúng tôi trở nên đặc biệt",
    "question_vi": "Hướng dẫn viên du lịch đang giới thiệu một địa điểm du lịch. Có bao nhiêu người sống trong thị trấn?",
+   "extra": [
+    "5,000",
+    "12,000"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q31.mp3"
   },
   {
@@ -767,6 +891,10 @@
    "transcript": "His picture is of my aunt and my mom many people say they look alike I find it funny though because when they were teenagers my mom had long hair while my aunt had short hair they were both equally thin back then but their eyes were different my mom has lovely brown eyes and my aunt has strikingly beautiful blue eyes even with their differences they share a special bond that makes them so similar in spirit",
    "translation": "Bức ảnh của anh ấy là của dì tôi và mẹ tôi. Nhiều người nói rằng họ trông giống nhau. Tôi thấy buồn cười vì khi họ còn là thiếu niên, mẹ tôi để tóc dài trong khi dì tôi để tóc ngắn. Hồi đó cả hai đều gầy như nhau nhưng mắt họ khác nhau. Mẹ tôi có đôi mắt nâu đáng yêu và dì tôi có đôi mắt xanh rất đẹp, ngay cả khi có sự khác biệt, họ có một mối liên kết đặc biệt khiến họ rất giống nhau về tinh thần.",
    "question_vi": "James đang nói về các thành viên trong gia đình anh ấy. Mẹ và dì của anh ấy giống nhau ở điểm nào?",
+   "extra": [
+    "They both had short hair.",
+    "They both had brown eyes."
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q32.mp3"
   },
   {
@@ -791,6 +919,10 @@
    "transcript": "Come in hi professor it is me Julie I wanted to ask about the assignment is it possible to get an extension until Friday what's the matter Julie do you have any difficulties I have a lot of work lately so I can't complete it by Thursday actually all assignments need to be submitted by Saturday morning so you have two more days oh that's great thank you so much",
    "translation": "Xin chào giáo sư, tôi là Julie Tôi muốn hỏi về bài tập có thể được gia hạn đến thứ Sáu có chuyện gì vậy Julie bạn có gặp khó khăn gì không. Gần đây tôi có rất nhiều việc nên không thể hoàn thành trước thứ Năm, thực ra tất cả các bài tập cần phải được nộp trước sáng thứ Bảy để bạn có thêm hai ngày nữa ồ thật tuyệt, cảm ơn bạn rất nhiều",
    "question_vi": "Julie đang hỏi giáo sư của cô ấy về bài tập. Khi nào công việc đến hạn?",
+   "extra": [
+    "On Friday afternoon",
+    "On Monday morning"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q33.mp3"
   },
   {
@@ -815,6 +947,10 @@
    "transcript": "I usually have dinner every evening it's become a habit for me to enjoy a meal at that time after a long day I find it's the perfect time to unwind and relax plus I love to spend time with my family during dinner it's our chance to catch up and enjoy some good food together we usually have dinner at 7:00 and it is definitely my favorite meal of the day",
    "translation": "Tôi thường ăn tối vào mỗi buổi tối, việc thưởng thức bữa ăn vào thời điểm đó đã trở thành thói quen của tôi sau một ngày dài. Tôi thấy đây là thời điểm hoàn hảo để nghỉ ngơi và thư giãn. Ngoài ra, tôi thích dành thời gian cho gia đình trong bữa tối. Đây là cơ hội để chúng tôi gặp gỡ và thưởng thức một số món ăn ngon cùng nhau. Chúng tôi thường ăn tối lúc 7:00 và đó chắc chắn là bữa ăn yêu thích trong ngày của tôi",
    "question_vi": "Một người đàn ông đang nói về thói quen ăn uống của mình. Anh ấy thường ăn lúc mấy giờ?",
+   "extra": [
+    "5 o'clock",
+    "9 o'clock"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q34.mp3"
   },
   {
@@ -839,6 +975,10 @@
    "transcript": "Hi honey it's me just a reminder that the train leaves at 5:00 so you should arrive around 6:00 I'll be there to pick you up at the train station let's meet outside the shop opposite the station I can't wait to have dinner together see you soon",
    "translation": "Xin chào em yêu, tôi chỉ nhắc nhở rằng tàu khởi hành lúc 5 giờ nên bạn sẽ đến vào khoảng 6 giờ. Tôi sẽ có mặt ở ga đón bạn. Chúng ta hãy gặp nhau bên ngoài cửa hàng đối diện ga. Tôi rất nóng lòng được ăn tối cùng nhau. Hẹn sớm gặp lại bạn",
    "question_vi": "Một người đàn ông đang gọi vợ mình. Họ sẽ gặp nhau ở đâu?",
+   "extra": [
+    "At the restaurant",
+    "At the bus stop"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q35.mp3"
   },
   {
@@ -863,6 +1003,10 @@
    "transcript": "Hey it's Jack I just moved to a new house in this busy neighborhood and it's really cool there are so many houses here in different colors purple blue and white my house is big and red I'd love for you to come over and check it out let me know when you're free",
    "translation": "Này, Jack tôi vừa chuyển đến một ngôi nhà mới trong khu phố đông đúc này và thật tuyệt vời có rất nhiều ngôi nhà ở đây với nhiều màu sắc khác nhau, xanh tím và trắng, nhà tôi rất to và màu đỏ. Tôi muốn bạn ghé qua xem thử, khi nào bạn rảnh thì báo cho tôi biết nhé",
    "question_vi": "Jack đang gọi điện để mời một người bạn đến nhà anh ấy. Ngôi nhà của Jack màu gì?",
+   "extra": [
+    "Purple",
+    "White"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q36.mp3"
   },
   {
@@ -887,6 +1031,10 @@
    "transcript": "Every morning I start my day by going for a run it helps me clear my mind and gives me energy after lunch at around 2:00 I sit down at my working table ready to write my husband is my best crit so I tried to produce something before he gets home in the afternoon I want to show him what I've been working on at night I seek Motivation by watching movies or reading books this helps me find new ideas for my stories writing is a journey and each day brings something new",
    "translation": "Mỗi buổi sáng, tôi bắt đầu ngày mới bằng việc chạy bộ, nó giúp tôi tỉnh táo và tiếp thêm năng lượng sau bữa trưa vào khoảng 2:00. Tôi ngồi xuống bàn làm việc và sẵn sàng viết cho chồng tôi là bài phê bình tốt nhất của tôi nên tôi đã cố gắng tạo ra thứ gì đó trước khi anh ấy về nhà vào buổi chiều. Tôi muốn cho anh ấy thấy những gì tôi đã làm vào ban đêm. Tôi tìm kiếm Động lực bằng cách xem phim hoặc đọc sách, điều này giúp tôi tìm ra những ý tưởng mới vì việc viết truyện của tôi là một hành trình và mỗi ngày đều mang đến một điều gì đó mới mẻ",
    "question_vi": "Một tác giả đang nói về thói quen hàng ngày của cô ấy. Cô ấy thường viết khi nào?",
+   "extra": [
+    "At night",
+    "Before breakfast"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q37.mp3"
   },
   {
@@ -911,6 +1059,10 @@
    "transcript": "Hey sweetie it's Mom can you please pick up three things on your way home I need a dozen eggs they're 1 lb 50 each also grab a loaf of bread and some milk please thanks love you",
    "translation": "Này con yêu, mẹ đây con có thể lấy ba thứ trên đường về nhà không. Con cần một chục quả trứng, mỗi quả nặng 1 lb 50 cũng lấy một ổ bánh mì và một ít sữa, cảm ơn con yêu nhé",
    "question_vi": "Một người mẹ đang gọi điện cho con trai mình để nhắc cậu bé về việc đi mua đồ tạp hóa. Một quả trứng giá bao nhiêu?",
+   "extra": [
+    "£1.00 (One pound)",
+    "£2.00 (Two pounds)"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q38.mp3"
   },
   {
@@ -935,6 +1087,10 @@
    "transcript": "Many young people ask me how to save money some people think buying things online is cheaper but that's not always true of course saving money is important but my main advice is to cook for yourself instead of eating out it's a simple way to spend less and keep more money in your",
    "translation": "Nhiều bạn trẻ hỏi tôi làm thế nào để tiết kiệm tiền một số người cho rằng mua đồ trực tuyến rẻ hơn nhưng điều đó không phải lúc nào cũng đúng. Tất nhiên, tiết kiệm tiền là quan trọng nhưng lời khuyên chính của tôi là hãy tự nấu ăn thay vì đi ăn ngoài. Đó là cách đơn giản để chi tiêu ít hơn và giữ được nhiều tiền hơn trong túi.",
    "question_vi": "Ông khuyên các bạn trẻ nên làm gì để tiết kiệm tiền?",
+   "extra": [
+    "Get a part-time job",
+    "Stop using credit cards"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q39.mp3"
   },
   {
@@ -959,6 +1115,10 @@
    "transcript": "How was your holiday it was really nice on the first day I plan to visit the city but the weather was terrible so I decided not to go oh that's a shame did you go to the cinema instead know I thought about it but I never had time I spent most afternoons relaxing and walking around a beautiful",
    "translation": "Kỳ nghỉ của bạn thế nào, ngày đầu tiên thật tuyệt vời. Tôi dự định đến thăm thành phố nhưng thời tiết rất tệ nên tôi quyết định không đi ồ thật tiếc là bạn đã đi xem phim thay vì biết tôi đã nghĩ về điều đó nhưng tôi chưa bao giờ có thời gian. Tôi dành hầu hết các buổi chiều để thư giãn và đi dạo quanh một nơi đẹp đẽ.",
    "question_vi": "Nghe hai người bạn kể về kỳ nghỉ của người phụ nữ. Người phụ nữ đã làm gì vào kỳ nghỉ?",
+   "extra": [
+    "Go to the beach",
+    "Go shopping"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q40.mp3"
   },
   {
@@ -983,6 +1143,10 @@
    "transcript": "I enjoy trying different activities these days I often go bowling with my friends and last month I started playing golf however last year was all about cycling I rode my bike every weekend and really loved it I still cycle sometimes but not as much as I did then",
    "translation": "Tôi thích thử các hoạt động khác nhau trong những ngày này Tôi thường đi chơi bowling với bạn bè và tháng trước tôi bắt đầu chơi gôn tuy nhiên năm ngoái chủ yếu là đạp xe Tôi đạp xe vào mỗi cuối tuần và thực sự yêu thích môn thể thao này. Thỉnh thoảng tôi vẫn đạp xe nhưng không nhiều như lúc đó",
    "question_vi": "Nghe một người đàn ông nói về một số hoạt động. Năm ngoái anh ấy thích làm gì?",
+   "extra": [
+    "Swimming",
+    "Playing tennis"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q41.mp3"
   },
   {
@@ -1007,6 +1171,10 @@
    "transcript": "Attention passengers the train scheduled to leave at 10:15 has been canceled however if you are traveling to Bristol please board the special service leaving at 9:30 from platform to",
    "translation": "Xin lưu ý hành khách, chuyến tàu dự kiến ​​khởi hành lúc 10:15 đã bị hủy, tuy nhiên nếu bạn đang đi đến Bristol, vui lòng lên chuyến tàu đặc biệt khởi hành lúc 9:30 từ sân ga này đến sân ga khác.",
    "question_vi": "Nghe thông báo. Mấy giờ tàu khởi hành?",
+   "extra": [
+    "09.00",
+    "10.30"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q42.mp3"
   },
   {
@@ -1031,6 +1199,10 @@
    "transcript": "If you travel by bus regularly I recommend buying a bus card a single ticket costs $2 and a day pass is $10 students can get a special card for $15 but the standard bus card costs $20 and can be used for a whole month",
    "translation": "Nếu bạn đi du lịch bằng xe buýt thường xuyên, tôi khuyên bạn nên mua thẻ xe buýt, một vé có giá 2 đô la và vé một ngày là 10 đô la. Học sinh có thể nhận được một thẻ đặc biệt với giá 15 đô la nhưng thẻ xe buýt tiêu chuẩn có giá 20 đô la và có thể sử dụng trong cả tháng",
    "question_vi": "Thẻ xe buýt giá bao nhiêu?",
+   "extra": [
+    "2 dollars",
+    "25 dollars"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q43.mp3"
   },
   {
@@ -1055,6 +1227,10 @@
    "transcript": "Hi Tom I borrowed some money from the kitchen table this morning there were only 5 lbs there so I took that and added another 3 lb from my wallet I've now put everything back along with two extra pounds there should be 10 lb on the table now",
    "translation": "Xin chào Tom Tôi đã mượn một số tiền trên bàn bếp sáng nay chỉ còn 5 pound nên tôi đã lấy số tiền đó và thêm 3 pound nữa từ ví của mình. Bây giờ tôi đã đặt mọi thứ trở lại cùng với 2 pound thừa nên giờ sẽ còn 10 pound trên bàn",
    "question_vi": "Nhà bếp còn lại bao nhiêu tiền?",
+   "extra": [
+    "2 pounds",
+    "3 pounds"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q44.mp3"
   },
   {
@@ -1079,6 +1255,10 @@
    "transcript": "Mom which bus should I take home after football practice the number 6 goes to the town center and the number 9 stop near the supermarket what about the bus that stops near our house that's the number eight it stops just around the corner from our home",
    "translation": "Mẹ ơi, con nên đi xe buýt nào về nhà sau buổi tập bóng đá, xe số 6 đi vào trung tâm thị trấn và trạm số 9 gần siêu thị. Còn chiếc xe buýt dừng gần nhà chúng con, đó là số 8, nó dừng ngay gần nhà chúng con.",
    "question_vi": "Số xe buýt nào dừng gần nhà cậu bé?",
+   "extra": [
+    "Five",
+    "Seven"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q45.mp3"
   },
   {
@@ -1103,6 +1283,10 @@
    "transcript": "Hi everyone just a quick update about tonight we originally planned to have dinner at 7:00 but some guests are arriving late we then thought about moving it to a quarter past 7:00 however the final decision is to start dinner at half past 7 see you all",
    "translation": "Xin chào mọi người, chúng tôi chỉ cập nhật nhanh về tối nay, ban đầu chúng tôi dự định ăn tối lúc 7:00 nhưng một số khách đến muộn nên chúng tôi đã nghĩ đến việc chuyển sang 7:00 mười lăm tuy nhiên quyết định cuối cùng là bắt đầu bữa tối lúc 7:30 hẹn gặp lại các bạn",
    "question_vi": "Bữa tối diễn ra lúc mấy giờ?",
+   "extra": [
+    "7:15 pm",
+    "6:30 pm"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q46.mp3"
   },
   {
@@ -1127,6 +1311,10 @@
    "transcript": "Shall we have a meeting at 5:15 I don't think I can finish work by then okay what about 5:40 that's a bit late for me could we meet at 5:30 instead show 5:30 sounds perfect",
    "translation": "Chúng ta sẽ họp lúc 5:15. Tôi không nghĩ mình có thể hoàn thành công việc trước lúc đó được thôi, thế còn 5:40 thì hơi muộn đối với tôi, chúng ta có thể gặp nhau lúc 5:30 thay vì hiển thị 5:30 nghe có vẻ hoàn hảo",
    "question_vi": "Họ sắp xếp cuộc gặp lúc mấy giờ?",
+   "extra": [
+    "5:00 pm",
+    "5:45 pm"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q47.mp3"
   },
   {
@@ -1151,6 +1339,10 @@
    "transcript": "I'm really excited about the show this weekend at first I heard that it would end with a party but that information wasn't correct then someone told me the final event would be a boring performance which sounded disappointing however I checked the official website yesterday and it says the show will finish with a surprise performance I can't wait to see it",
    "translation": "Tôi thực sự rất hào hứng với buổi biểu diễn cuối tuần này lúc đầu tôi nghe nói rằng nó sẽ kết thúc bằng một bữa tiệc nhưng thông tin đó không chính xác sau đó có người nói với tôi rằng sự kiện cuối cùng sẽ là một màn trình diễn nhàm chán, nghe có vẻ thất vọng tuy nhiên tôi đã kiểm tra trang web chính thức ngày hôm qua và nó nói rằng chương trình sẽ kết thúc với một màn trình diễn bất ngờ. Tôi rất nóng lòng được xem nó",
    "question_vi": "Một cô gái đang nói về một chương trình mà cô ấy sẽ tham dự. Nó sẽ kết thúc bằng gì?",
+   "extra": [
+    "A fireworks show",
+    "A speech"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q48.mp3"
   },
   {
@@ -1175,6 +1367,10 @@
    "transcript": "There are five people in my family my parents my older brother my younger sister and me I get on well with both of them especially my sister so apart from me there are two brothers and sisters in the family",
    "translation": "Gia đình tôi có năm người, bố mẹ tôi, anh trai tôi, em gái tôi và tôi, tôi rất thân với cả hai người, đặc biệt là chị gái tôi nên ngoài tôi còn có hai anh chị em trong gia đình",
    "question_vi": "Có bao nhiêu anh chị em?",
+   "extra": [
+    "1",
+    "5"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q49.mp3"
   },
   {
@@ -1199,6 +1395,10 @@
    "transcript": "The meeting should finish around midday great I was thinking we could go to a cafe afterwards that sounds nice but I already had coffee this morning fair enough do you need to get back to work straight away not really why do we have lunch together after the meeting good idea",
    "translation": "Cuộc họp sẽ kết thúc vào khoảng giữa trưa, thật tuyệt. Tôi đang nghĩ chúng ta có thể đi đến quán cà phê sau đó, điều đó nghe có vẻ hay nhưng tôi đã uống cà phê sáng nay rồi, đủ để bạn quay lại làm việc ngay lập tức, không thực sự tại sao chúng ta lại ăn trưa cùng nhau sau cuộc họp ý kiến ​​hay đấy",
    "question_vi": "Họ sẽ làm gì sau cuộc họp?",
+   "extra": [
+    "Go home",
+    "Go shopping"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q50.mp3"
   },
   {
@@ -1223,6 +1423,10 @@
    "transcript": "Who is your favorite teacher at school Tom Mr John is really good at explaining maths and Mr Alex always makes his lessons fun they both sound great they are but Miss Brown is my favorite she's always kind and helps me whenever I have a problem",
    "translation": "Giáo viên yêu thích của bạn ở trường là ai Tom Thầy John rất giỏi giải thích môn toán và thầy Alex luôn làm cho bài học của mình trở nên thú vị. Cả hai đều nghe rất hay nhưng cô Brown là người tôi yêu quý nhất, cô ấy luôn tử tế và giúp đỡ tôi bất cứ khi nào tôi gặp vấn đề",
    "question_vi": "Tom đang nói chuyện với bạn của anh ấy về giáo viên của anh ấy. Giáo viên yêu thích của anh ấy là ai?",
+   "extra": [
+    "Mr Smith",
+    "Miss Taylor"
+   ],
    "audio": "data/Aptis_Listening_P1_De01/audio/q51.mp3"
   }
  ]

@@ -24,6 +24,10 @@
    "translation": "Xin chào mọi người Tôi muốn chia sẻ những gì gia đình tôi thường làm vào cuối tuần, chúng tôi thích dành thời gian cùng nhau và thường đi dạo trong công viên, đó là một cách hay để thư giãn và tận hưởng thiên nhiên, chúng tôi thích ngắm hoa và đôi khi đi dã ngoại, tuy nhiên cuối tuần này thì khác, chị gái tôi đến thăm chúng tôi và chúng tôi đã lên kế hoạch cho một buổi họp mặt gia đình nhỏ tại nhà, chúng tôi sẽ cùng nhau nấu một bữa ăn lớn và chơi một số trò chơi, sẽ rất vui nếu được cùng nhau trò chuyện và dành thời gian chất lượng như một gia đình. Tôi thực sự mong chờ điều đó",
    "question_vi": "Một người phụ nữ đang nói về kỳ nghỉ cuối tuần của gia đình cô ấy. Gia đình làm gì nhất vào cuối tuần?",
    "answer_guess": true,
+   "extra": [
+    "Goes shopping",
+    "Visits relatives"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q01.mp3"
   },
   {
@@ -49,6 +53,10 @@
    "translation": "Xin chào mọi người Chào mừng đến với chuyến tham quan của chúng tôi, tên tôi là Sam và tôi là hướng dẫn viên du lịch của bạn hôm nay Tôi rất vui được dẫn bạn đi tham quan thành phố xinh đẹp này, chúng tôi sẽ ghé thăm nhiều địa điểm thú vị bao gồm bảo tàng Công viên và chợ địa phương khi chúng tôi đi bộ. Tôi sẽ chia sẻ những sự thật và câu chuyện thú vị về từng địa điểm nếu bạn có bất kỳ câu hỏi nào, vui lòng hỏi ngay bây giờ trước khi chúng ta bắt đầu. Tôi muốn cho bạn biết rằng văn phòng của chúng tôi nằm đối diện với khách sạn nơi bạn đang ở. Nếu bạn cần bất kỳ trợ giúp hoặc thông tin nào trong thời gian lưu trú, bạn luôn có thể đến với chúng tôi, hãy bắt đầu cuộc phiêu lưu của chúng ta và cùng nhau khám phá",
    "question_vi": "Nghe hướng dẫn viên du lịch. Văn phòng nằm ở đâu?",
    "answer_guess": true,
+   "extra": [
+    "Inside the museum",
+    "Near the station"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q02.mp3"
   },
   {
@@ -74,6 +82,10 @@
    "translation": "Xin chào mọi người, tôi là Greg và tôi muốn kể cho các bạn nghe về một ngày làm việc điển hình trong đời tôi. Tôi thường thức dậy sớm vào khoảng 7 giờ sáng. Sau bữa sáng nhanh, tôi chuẩn bị đi làm. Tôi thích mặc quần áo lịch sự vì tôi làm việc trong văn phòng. Tôi đi xe buýt mỗi ngày, mất khoảng 30 phút. Tôi thích nhìn ra cửa sổ và nghe nhạc trên đường đi khi đến văn phòng. Tôi bắt đầu ngày mới bằng cách kiểm tra email và lên kế hoạch cho công việc của mình. Tôi họp với nhóm của mình và chúng tôi cùng nhau thực hiện các dự án.",
    "question_vi": "Greg đang nói về một ngày làm việc trong đời anh ấy. Anh ấy đi làm bằng cách nào?",
    "answer_guess": true,
+   "extra": [
+    "By car",
+    "By train"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q03.mp3"
   },
   {
@@ -99,6 +111,10 @@
    "translation": "Xin chào mọi người Tôi ở đây để nói về dinh dưỡng và tầm quan trọng của nó đối với sức khỏe của chúng ta. Ăn trái cây rất có lợi, đặc biệt đối với trẻ em, trái cây có vitamin và khoáng chất giúp trẻ phát triển khỏe mạnh. Thời điểm tốt nhất để trẻ ăn trái cây là vào buổi sáng, điều này giúp trẻ có năng lượng cho ngày mới. Bạn có thể thêm trái cây vào bữa sáng như sinh tố hoặc sữa chua. Đó là một cách ngon miệng và lành mạnh để bắt đầu ngày mới vì vậy hãy khuyến khích trẻ ăn nhiều trái cây hơn vào buổi sáng, cảm ơn bạn",
    "question_vi": "Một bác sĩ đang nói về việc ăn uống lành mạnh. Ăn trái cây vào thời điểm nào là tốt nhất?",
    "answer_guess": true,
+   "extra": [
+    "At lunchtime",
+    "Before bed"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q04.mp3"
   },
   {
@@ -124,6 +140,10 @@
    "translation": "Xin chào mọi người Tôi muốn chia sẻ kế hoạch của mình cho kỳ nghỉ năm nay Tôi sẽ đi du lịch thành phố vài ngày Tôi rất hào hứng vì tôi thích khám phá những địa điểm mới Tôi dự định đến thăm một số bảo tàng thú vị và thử các món ăn khác nhau tại các nhà hàng địa phương Điều tuyệt vời nhất là tôi sẽ đi du lịch bằng xe buýt rất vui và cũng rất rẻ Tôi sẽ rời đi vào sáng sớm để tận hưởng một ngày Tôi rất nóng lòng được xem tất cả các thắng cảnh và chụp thật nhiều ảnh. Đây sẽ là một kỳ nghỉ tuyệt vời",
    "question_vi": "Một người đàn ông đang nói về kỳ nghỉ của mình. Anh ấy sẽ đi đến thành phố bằng cách nào?",
    "answer_guess": true,
+   "extra": [
+    "by plane",
+    "by bike"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q05.mp3"
   },
   {
@@ -149,6 +169,10 @@
    "translation": "Này Sarah, bạn có hào hứng với chuyến đi của chúng ta vào tuần tới không, chào Mike vâng Tôi nóng lòng chờ đợi quá lâu rồi nhưng tôi nghe nói thời tiết sẽ lạnh và ẩm ướt chúng ta nên chuẩn bị cho điều đó. Tôi hy vọng trời sẽ không mưa quá nhiều, chúng ta cần mang theo áo mưa và quần áo ấm đề phòng trường hợp hay hãy lên kế hoạch cho một số hoạt động vui vẻ trong nhà nếu thời tiết xấu vâng",
    "question_vi": "Hai người bạn đang nói về chuyến đi của họ. Thời tiết sẽ như thế nào?",
    "answer_guess": true,
+   "extra": [
+    "Windy and dry",
+    "Snowy"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q06.mp3"
   },
   {
@@ -174,6 +198,10 @@
    "translation": "Xin chào Evan đây là mẹ Tôi chỉ muốn để lại tin nhắn để kiểm tra sức khỏe của bạn Tôi nghe nói bạn cảm thấy không khỏe và tôi thực sự lo lắng cho bạn đảm bảo rằng bạn đang nghỉ ngơi và uống nhiều nước bạn có cần gì không Tôi có thể mang cho bạn một ít súp hoặc đồ ăn nhẹ yêu thích của bạn xin hãy chăm sóc bản thân Tôi yêu bạn và hy vọng bạn cảm thấy tốt hơn sớm hãy gọi lại cho tôi khi bạn có thể",
    "question_vi": "Nghe tin nhắn thoại. Even cảm thấy thế nào?",
    "answer_guess": true,
+   "extra": [
+    "Angry",
+    "Bored"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q07.mp3"
   },
   {
@@ -199,6 +227,10 @@
    "translation": "Thưa quý vị, chào mừng đến với cuộc đấu giá hôm nay Tôi có một chiếc tủ rất đẹp ở đây tôi muốn cho các bạn xem chiếc tủ này được làm bằng gỗ chất lượng cao và nó có thiết kế đáng yêu, phù hợp với mọi căn phòng. Điều đặc biệt là ngăn kéo được giữ nguyên bản, điều này làm tăng thêm sự quyến rũ và giá trị của nó. Bạn có thể lưu trữ những món đồ yêu thích của mình hoặc sử dụng nó để trưng bày những đồ trang trí đẹp mắt của mình. Đừng bỏ lỡ cơ hội sở hữu một món đồ nội thất độc đáo, hãy bắt đầu đấu giá",
    "question_vi": "Hãy nghe người bán đấu giá nói về một chiếc tủ. Phần nào của tủ là nguyên bản?",
    "answer_guess": true,
+   "extra": [
+    "The legs",
+    "The top"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q08.mp3"
   },
   {
@@ -224,6 +256,10 @@
    "translation": "Xin chào Mia là Anna Tôi hy vọng bạn có một ngày tuyệt vời Tôi muốn xem liệu sau này chúng ta có còn gặp nhau ở chợ không Tôi thực sự rất phấn khích vì tôi muốn thử cửa hàng kem mới mà chúng ta đã nói đến Tôi nghe nói họ có một số hương vị tuyệt vời Tôi sẽ đến đó vào khoảng 3 giờ chiều. chúng ta hãy cùng xem các loại trái cây và rau quả tươi. Đi mua sắm cùng nhau luôn vui vẻ hẹn gặp lại bạn sớm",
    "question_vi": "Anna đang gọi cho bạn cô ấy. Họ sẽ gặp nhau ở đâu?",
    "answer_guess": true,
+   "extra": [
+    "At the cinema",
+    "At the station"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q09.mp3"
   },
   {
@@ -249,6 +285,10 @@
    "translation": "Xin chào Jake là Lucy Tôi chỉ muốn hỏi thăm bạn thế nào rồi Tôi biết gần đây bạn bận rộn với công việc và trường học Tôi lo lắng rằng bạn không uống đủ nước Việc giữ nước là điều thực sự quan trọng, đặc biệt là khi bạn làm việc chăm chỉ, hãy nhớ mang theo một chai bên mình Tôi hy vọng bạn chăm sóc bản thân tốt, hãy sớm gặp lại nhé",
    "question_vi": "Lucy đang gọi cho anh trai cô ấy. Anh trai uống gì?",
    "answer_guess": true,
+   "extra": [
+    "Coffee",
+    "Juice"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q10.mp3"
   },
   {
@@ -274,6 +314,10 @@
    "translation": "Xin chào mẹ là Jack Con hy vọng mẹ vẫn khỏe Con đang đi mua sắm và con cần mua một ít sô cô la cho sinh nhật của em gái con. Cô ấy thích sô cô la đen nên con muốn tặng mẹ một ít sô cô la đẹp Nhân tiện, con có cần gì không khi con ở đây Tôi có thể mua một ít sữa hoặc trái cây nếu mẹ muốn cho con biết Tôi sẽ nói chuyện với mẹ sớm",
    "question_vi": "Jack đang gọi điện cho mẹ anh ấy. Jack cần mua gì cho em gái?",
    "answer_guess": true,
+   "extra": [
+    "Flowers",
+    "A cake"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q11.mp3"
   },
   {
@@ -299,6 +343,10 @@
    "translation": "Xin chào, đây là Mark Tôi nghĩ tôi có thể đã đánh mất kính khi đến cửa hàng của bạn sáng nay. Tôi nhớ mình đã thử áo khoác và có thể tôi đã để chúng ở đó, chúng màu nâu và tròn. Tôi thực sự cần chúng để đọc và lái xe. Tôi muốn quay lại và kiểm tra xem chúng có còn ở đó không, bạn có thể giữ chúng cho tôi nếu bạn tìm thấy, cảm ơn bạn rất nhiều vì sự giúp đỡ của bạn. Tôi sẽ đến đó sau khoảng 20 phút nữa",
    "question_vi": "Một người đàn ông đang nói chuyện điện thoại. Người đàn ông đã mất gì?",
    "answer_guess": true,
+   "extra": [
+    "Keys",
+    "Phone"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q12.mp3"
   },
   {
@@ -324,6 +372,10 @@
    "translation": "Xin chào, tôi cần trợ giúp để mua quà cho bạn bè của tôi, tất nhiên bạn đang tìm loại quà gì Tôi chưa chắc bạn có cốc như thế nào, chúng tôi có nhiều thiết kế đầy màu sắc, bạn có muốn mua một số không, chúng rất đẹp nhưng tôi nghĩ bạn bè của tôi đã có đủ cốc rồi, còn thứ gì khác nến cũng có thể là một lựa chọn tuyệt vời, chúng tôi có một số loại có mùi thơm đáng yêu. Tôi thích chúng nhưng tôi đang tìm thứ khác thì sao, quần áo thì sao, chúng tôi có một số áo sơ mi và áo len sành điệu nghe có vẻ hay. Tôi nghĩ cuối cùng tôi sẽ mua một ít quần áo cho bạn bè của mình. cảm ơn sự giúp đỡ của bạn",
    "question_vi": "Một người đàn ông đang nói chuyện với nhân viên bán hàng. Người đàn ông mua gì ở cửa hàng?",
    "answer_guess": true,
+   "extra": [
+    "Books",
+    "Toys"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q13.mp3"
   },
   {
@@ -349,6 +401,10 @@
    "translation": "Xin chào giáo sư Smith, đây là John gọi điện về cuộc họp của chúng ta cho bài tập Tôi muốn xác nhận thời gian hẹn của chúng ta Tôi biết lúc đầu chúng ta đã thảo luận một vài lựa chọn. Tôi nghĩ chúng ta đã đồng ý vào sáng thứ Ba nhưng sau đó tôi nhớ ra rằng điều đó không phù hợp với lịch trình của bạn nên tôi đã xem xét vào chiều thứ Năm nhưng tôi có một lớp học khác nên tôi khá chắc chắn rằng chúng ta đã giải quyết vào lúc 10 giờ sáng thứ Năm tại văn phòng của bạn, đó là những gì tôi đã viết ra. Tôi sẽ mang theo bản thảo và ghi chú cho dự án nếu tôi sai ngày hoặc giờ hoặc nếu bạn cần tôi làm vậy mang theo bất cứ thứ gì khác xin vui lòng cho tôi biết mong được thảo luận về bài tập với bạn, chúc một ngày tốt lành",
    "question_vi": "Một người đàn ông đang gọi giáo viên của mình đến để nhận bài tập. Cuộc họp diễn ra khi nào?",
    "answer_guess": true,
+   "extra": [
+    "On Tuesday afternoon",
+    "On Wednesday morning"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q14.mp3"
   },
   {
@@ -374,6 +430,10 @@
    "translation": "Xin chào, tôi đang nghĩ chúng ta nên sớm gặp nhau để thảo luận về dự án sắp tới của mình. Tôi biết cuối tuần thường là thời điểm thích hợp để họp mặt nhưng lần này hơi khó khăn vào thứ Bảy vì tôi có sự kiện gia đình cả ngày và cả Chủ nhật. Tôi thường dùng ngày đó để nghỉ ngơi và chuẩn bị cho tuần sắp tới nên tôi đang tự hỏi liệu chúng ta có thể gặp nhau vào thứ Ba hay không, thay vào đó, điều đó thực sự tốt cho tôi, bạn nghĩ sao về điều đó",
    "question_vi": "Hai đồng nghiệp nói về cuộc gặp gỡ. Khi nào họ muốn gặp nhau?",
    "answer_guess": true,
+   "extra": [
+    "On Monday",
+    "On Friday"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q15.mp3"
   },
   {
@@ -399,6 +459,10 @@
    "translation": "Này, lát nữa bạn có rảnh uống cà phê không Tôi đã tìm thấy một địa điểm mới tuyệt vời trong thị trấn, không khó để tìm thấy bạn biết đấy, cửa hàng quà tặng lớn trên Phố Chính sẽ có quán cà phê ở ngay đối diện nó. Chỉ cần tìm cửa hàng quà tặng sau đó băng qua đường bạn sẽ thấy quán cà phê ngay đối diện cửa hàng quà tặng, họ cũng có những chiếc bánh ngọt tuyệt vời, hãy gặp nhau ở đó lúc 3 giờ chiều nhé. được rồi",
    "question_vi": "Một người đàn ông đang gọi bạn mình đi uống cà phê. Quán cà phê tọa lạc ở đâu?",
    "answer_guess": true,
+   "extra": [
+    "Inside the gift shop",
+    "Above the gift shop"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q16.mp3"
   },
   {
@@ -424,6 +488,10 @@
    "translation": "Tôi thực sự thích sống ở nông thôn, có nhiều cây cao Green Fields và những dòng sông nhỏ, thường có mùi trong lành và sạch sẽ nhưng đôi khi không khí trở nên bẩn và khó thở nhiều người nghĩ ô tô trên đường làm cho không khí trở nên khó chịu. Những người khác nói rằng khói từ các nhà máy lớn là vấn đề, những thứ này có thể làm cho không khí bẩn nhưng ở nông thôn có một vấn đề lớn hơn. Nông dân thường đốt lửa để dọn ruộng họ đốt cây và cỏ già những đám cháy này tạo ra rất nhiều khói bay vào không khí, thật buồn vì khói có thể làm tổn thương động vật và khiến con người bị bệnh, chúng ta cần tìm những cách tốt hơn để làm sạch Cánh đồng mà không cần dùng lửa",
    "question_vi": "Một người đàn ông đang nói về môi trường ở nông thôn. Nguyên nhân chính của chất lượng không khí kém là gì?",
    "answer_guess": true,
+   "extra": [
+    "Rubbish in rivers",
+    "Animals on farms"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q17.mp3"
   },
   {
@@ -449,6 +517,10 @@
    "translation": "Tôi rất vui mừng về kỳ nghỉ sắp tới của mình Tôi đã suy nghĩ về nơi sẽ đi trong một thời gian dài một số người bạn của tôi đề nghị đi đến một bãi biển đẹp những người khác nói về việc khám phá những hang động thú vị nhưng tôi đã quyết định tôi sẽ đi đến những ngọn núi những ngọn núi rất đẹp với những khu rừng xanh tươi Tôi rất nóng lòng được hít thở không khí trong lành ở đó chúng thật hoàn hảo để thư giãn và tận hưởng thiên nhiên",
    "question_vi": "Một người phụ nữ đang nói về kế hoạch nghỉ lễ của mình. Cô ấy đi đâu vào ngày nghỉ?",
    "answer_guess": true,
+   "extra": [
+    "the city",
+    "the lake"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q18.mp3"
   },
   {
@@ -474,6 +546,10 @@
    "translation": "Khi đến bữa trưa, tôi có một niềm vui đơn giản Tôi thực sự thích một tách trà ấm, đó là thức uống tôi thích nhất trong khi ăn. Tôi thấy nó êm dịu và nó làm cho bữa ăn của tôi trở nên đặc biệt. Đôi khi mọi người hỏi tôi tại sao tôi không chọn cà phê hoặc nước trái cây nhưng đối với tôi, trà thật hoàn hảo, nó sưởi ấm trái tim tôi và cho tôi giây phút thư giãn",
    "question_vi": "Linda đang nói về những gì cô ấy thích ăn. Bữa trưa cô ấy ăn gì?",
    "answer_guess": true,
+   "extra": [
+    "Milk",
+    "Water"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q19.mp3"
   },
   {
@@ -499,6 +575,10 @@
    "translation": "Khi rảnh rỗi, tôi thích đến rạp hát, có điều gì đó thật kỳ diệu khi xem một buổi biểu diễn trực tiếp, nó khiến tôi cảm thấy tràn đầy sức sống và hạnh phúc. Tôi cũng thích chơi thể thao với bạn bè, chúng tôi cùng nhau rất vui vẻ dù là bóng đá hay bóng rổ, những hoạt động này giúp tôi thư giãn và làm cho ngày của tôi tươi sáng hơn",
    "question_vi": "Hãy nghe Sarah nói về sở thích của cô ấy. Cô ấy làm gì vào thời gian rảnh?",
    "answer_guess": true,
+   "extra": [
+    "Cook and garden",
+    "Travel and take photos"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q20.mp3"
   },
   {
@@ -524,6 +604,10 @@
    "translation": "Bạn biết đấy, tôi muốn nói về người quản lý cũ của tôi, George, anh ấy là một người rất thông minh và anh ấy đã dạy tôi rất nhiều về công việc. Tôi nhớ lần đầu tiên tôi gia nhập nhóm, anh ấy đã chỉ cho tôi cách làm tốt công việc của mình. George không nghiêm khắc lắm nhưng anh ấy có nhiều kỳ vọng. Nói chung, tôi đã học được cách trở nên tốt hơn nhờ có anh ấy. Tôi rất biết ơn sự hướng dẫn và hỗ trợ của anh ấy trong những ngày đầu tôi làm việc",
    "question_vi": "Hãy nghe Anna kể về người quản lý cũ của cô ấy, George. Anna đã nói gì về George?",
    "answer_guess": true,
+   "extra": [
+    "He was always late",
+    "He was very lazy"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q21.mp3"
   },
   {
@@ -549,6 +633,10 @@
    "translation": "Xin chào, tôi có thể giúp gì cho bạn vâng Tôi muốn có một số lời khuyên cho công việc tương lai của mình Tôi học chuyên ngành toán học, có điều gì tôi có thể làm tốt không, có nhiều con đường sự nghiệp khác nhau mà bạn có thể chọn, chẳng hạn như trở thành giáo viên, doanh nhân hoặc tiếp tục học cao hơn để trở thành nhà nghiên cứu. Tôi có một người bạn cũng học chuyên ngành toán và anh ấy hiện là doanh nhân với công ty riêng của mình. Tôi đoán đó sẽ là lựa chọn của tôi. Tôi không phù hợp để trở thành giáo viên vì tôi nghĩ mình hơi thiếu kiên nhẫn",
    "question_vi": "Một người đàn ông đang tìm kiếm lời khuyên về nghề nghiệp tương lai. Anh ấy sẽ làm gì?",
    "answer_guess": true,
+   "extra": [
+    "To become a researcher",
+    "To become a doctor"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q22.mp3"
   },
   {
@@ -574,6 +662,10 @@
    "translation": "Tôi muốn kể cho bạn nghe về một điều đặc biệt Tôi vừa mua đó là một chiếc váy đẹp chiếc váy dài và màu đỏ giống như ánh hoàng hôn Tôi cảm thấy rất hạnh phúc khi mặc nó Chất vải mềm mại và nó chảy rất đẹp khi tôi đi bộ Tôi có thể mặc nó đi dự tiệc hoặc một bữa tối tuyệt vời Tôi yêu chiếc váy mới của mình",
    "question_vi": "Hãy nghe một người phụ nữ kể về món đồ cô ấy vừa mua. Chiếc váy cô ấy mặc như thế nào?",
    "answer_guess": true,
+   "extra": [
+    "Short and blue",
+    "Short and black"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q23.mp3"
   },
   {
@@ -599,6 +691,10 @@
    "translation": "Xin chào John, chào John, đây là Sarah đang gọi. Tôi sẽ để lại tin nhắn cho bạn về cuộc họp hôm nay của chúng ta. Tôi biết chúng ta đã nói là chúng ta sẽ gặp nhau lúc 2:00 nhưng có chuyện xảy ra, chúng ta có thể đổi thời gian thành 3:00 không. Thay vào đó, tôi sẽ đến quán cà phê như thường lệ lúc 3:00, vui lòng gọi lại cho tôi nếu điều này không tiện cho bạn",
    "question_vi": "Hãy nghe Sarah để lại tin nhắn cho bạn cô ấy. Cô ấy muốn gặp khi nào?",
    "answer_guess": true,
+   "extra": [
+    "Four o'clock",
+    "Half past two"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q24.mp3"
   },
   {
@@ -624,6 +720,10 @@
    "translation": "Chào mừng mọi người đến với Rock City Tôi rất vui được giới thiệu với các bạn xung quanh thành phố tuyệt vời này. Thành phố đá có một lịch sử rất lâu dài và thú vị. Mọi người lần đầu tiên bắt đầu sống ở đây khoảng 1500 năm trước. Bạn có thể tin được rằng nó lâu đời hơn nhiều thành phố nổi tiếng trên thế giới. Thành phố có tên như vậy vì tất cả những tảng đá lớn mà bạn có thể thấy xung quanh chúng ta theo thời gian, người ta xây nhà và đường giữa những tảng đá này ngày nay chúng ta vẫn có thể thấy nhiều tòa nhà cổ từ rất lâu về trước",
    "question_vi": "Nghe hướng dẫn viên du lịch nói về Rock City. Thành phố này bao nhiêu tuổi?",
    "answer_guess": true,
+   "extra": [
+    "500 years",
+    "1000 years"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q25.mp3"
   },
   {
@@ -649,6 +749,10 @@
    "translation": "Chào buổi sáng mọi người, đây là một thông báo quan trọng về việc thay đổi lịch trình tàu hỏa, chuyến tàu tới London sẽ khởi hành lúc 9:15 chứ không phải 9:30 như kế hoạch. Vui lòng lắng nghe kỹ thông tin này nếu bạn đang đi chuyến tàu này, vui lòng đến sân ga số 3 ngay bây giờ, cảm ơn bạn đã quan tâm và chúc một ngày tốt lành",
    "question_vi": "Nghe thông báo. Khi nào tàu khởi hành?",
    "answer_guess": true,
+   "extra": [
+    "At 9:00",
+    "At 10:15"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q26.mp3"
   },
   {
@@ -674,6 +778,10 @@
    "translation": "Mẹ tôi là một người quan trọng trong cuộc đời tôi, cả hai chúng tôi đều có nhiều hoạt động giống nhau như đọc sách và làm vườn, thật tuyệt khi nói về những cuốn sách yêu thích của chúng tôi và dành thời gian trồng hoa cùng nhau. Chúng tôi có thể có một số sở thích khác nhau về thời trang và âm nhạc. Sở thích thực sự mang chúng tôi lại gần nhau hơn. Tôi yêu cách chúng tôi có thể gắn kết với nhau vì những sở thích này và cùng nhau vui vẻ",
    "question_vi": "Hãy nghe một người phụ nữ nói về cha mẹ cô ấy. Cô ấy giống mẹ cô ấy thế nào?",
    "answer_guess": true,
+   "extra": [
+    "They have similar taste in music",
+    "They have similar taste in fashion"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q27.mp3"
   },
   {
@@ -699,6 +807,10 @@
    "translation": "Tôi rất vui được cho bạn xem khu vực xinh đẹp này sẽ bắt đầu bằng việc lái xe dọc theo bờ biển để tận hưởng khung cảnh đại dương tuyệt vời, sau đó chúng ta sẽ lên núi để ngắm nhìn một số khung cảnh ngoạn mục, sau đó chúng ta sẽ đi xuống bến cảng và đi thuyền trên sông thư giãn. Trên thuyền, bạn có thể thưởng thức trà chiều và ngắm phong cảnh Bờ sông quyến rũ sau chuyến đi bằng thuyền sẽ kết thúc một ngày bằng việc đi dạo trên bãi biển, đừng quên máy ảnh của bạn, sẽ có rất nhiều cơ hội để có những bức ảnh tuyệt vời",
    "question_vi": "Bạn đang trong một chuyến du lịch. Hãy nghe thông báo để biết bạn sẽ uống trà ở đâu.",
    "answer_guess": true,
+   "extra": [
+    "At the harbour café",
+    "On the bus"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q28.mp3"
   },
   {
@@ -724,6 +836,10 @@
    "translation": "Toàn bộ là một trong những bộ phim yêu thích của tôi mà tôi đã xem cuối tuần trước, bộ phim tuyệt vời đến mức nó khiến tôi đứng ngồi không yên. Tôi thường không thích xem phim hành động vì chúng đều có cảm giác giống nhau và lặp đi lặp lại với những chiếc ghế đua buồn tẻ và những trận chiến vô nghĩa diễn ra hàng giờ, những cảnh núi non khá bất thường, trình tự lên cao hấp dẫn là phần quyến rũ nhất đối với tôi, cái kết tuy nhiên hơi buồn, nhiều người ước đó là một cái kết có hậu",
    "question_vi": "Một cô gái đang nói về một bộ phim. Cô ấy thích điều gì nhất ở bộ phim?",
    "answer_guess": true,
+   "extra": [
+    "The ending",
+    "The music"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q29.mp3"
   },
   {
@@ -749,6 +865,10 @@
    "translation": "Tôi thường thức dậy sớm mỗi ngày trước bất kỳ ai khác. Một số người dậy sớm để đi làm đúng giờ hoặc chăm sóc con cái nhưng đối với tôi, tất cả chỉ là tận hưởng sự yên tĩnh trước khi công việc bắt đầu nhâm nhi cà phê và lên kế hoạch cho ngày mới của mình.",
    "question_vi": "Một nhân viên đang nói về việc dậy sớm. Tại sao cô ấy dậy sớm?",
    "answer_guess": true,
+   "extra": [
+    "to exercise",
+    "to read the news"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q30.mp3"
   },
   {
@@ -774,6 +894,10 @@
    "translation": "Này, tôi có một số kế hoạch thú vị cho ngày hôm nay trước tiên. Tôi sẽ gặp một người bạn ở quán cà phê ấm cúng, chúng tôi muốn ngồi xuống và cùng nhau thưởng thức đồ uống ấm áp, đã lâu rồi chúng tôi mới gặp nhau nên tôi thực sự mong chờ điều đó. Tôi nghĩ bắt đầu ngày mới bằng một cuộc trò chuyện vui vẻ với một cảnh sát sẽ là hoàn hảo sau đó tôi có thể nghĩ xem nên ăn gì cho bữa trưa nhưng hiện tại cà phê chắc chắn đang ở trong tâm trí tôi",
    "question_vi": "Một người phụ nữ nói với bạn mình về kế hoạch trong ngày của cô ấy. Người phụ nữ sẽ làm gì?",
    "answer_guess": true,
+   "extra": [
+    "Have breakfast at home",
+    "Go for a walk"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q31.mp3"
   },
   {
@@ -799,6 +923,10 @@
    "translation": "Tôi đã suy nghĩ rất nhiều về công việc của mình và tôi thực sự muốn trở thành một nhà văn, nó không chỉ là kiếm nhiều tiền hay trở nên nổi tiếng đối với tôi, lý do chính của tôi là giúp mọi người hoàn thiện bản thân. Tôi hy vọng bài viết của tôi có thể tạo ra sự khác biệt trong cuộc sống của họ và đó là lý do tại sao tôi chọn công việc này",
    "question_vi": "Một người phụ nữ chia sẻ công việc của mình với bạn mình. Tại sao cô ấy muốn trở thành một nhà văn?",
    "answer_guess": true,
+   "extra": [
+    "to travel the world",
+    "to work from home"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q32.mp3"
   },
   {
@@ -824,6 +952,10 @@
    "translation": "Xin chào Jane, có vẻ như James lại đến muộn Tôi bắt đầu tự hỏi liệu chúng ta có nên đợi anh ấy không. Tôi không muốn lãng phí quá nhiều thời gian Tôi cảm thấy như chúng ta có thể có cuộc họp mà không có anh ấy, chúng ta có rất nhiều điều để thảo luận và chúng ta luôn có thể cập nhật cho anh ấy sau. Tôi nghĩ tốt hơn là nên tiếp tục thay vì chỉ chờ đợi vậy nên hãy tiếp tục thôi",
    "question_vi": "Nghe Mary nói chuyện với Jane trong khi chờ James. Họ đã quyết định làm gì?",
    "answer_guess": true,
+   "extra": [
+    "Go for lunch",
+    "Reschedule for tomorrow"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q33.mp3"
   },
   {
@@ -849,6 +981,10 @@
    "translation": "Tôi đang nghĩ xem nên làm gì tối nay. Tôi có thể đi xem phim nhưng tôi không chắc đó có phải là ý tưởng hay nhất hay không. Tôi có thể thích ở nhà và thư giãn hơn, tuy nhiên tôi muốn thảo luận vấn đề này với bạn mình trước. Tôi tin rằng việc để ngỏ các lựa chọn của chúng ta là một ý kiến ​​hay nên bây giờ tôi sẽ chờ xem chúng ta muốn làm gì",
    "question_vi": "Một người đàn ông và một người phụ nữ đang thảo luận về kế hoạch của họ cho buổi tối. Họ quyết định làm gì vào buổi tối?",
    "answer_guess": true,
+   "extra": [
+    "Go to a restaurant",
+    "Go to a concert"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q34.mp3"
   },
   {
@@ -874,6 +1010,10 @@
    "translation": "Xin chào Kay, tôi là Douglas Tôi hy vọng bạn vẫn ổn Tôi muốn gọi cho bạn hôm nay để nói lời cảm ơn vì tất cả sự giúp đỡ của bạn với dự án. Lời khuyên của bạn thực sự có giá trị và nó đã tạo ra sự khác biệt lớn. Tôi cũng muốn nhờ bạn giúp đỡ nếu bạn có thời gian. Tôi rất muốn gặp và thảo luận về một vài ý tưởng tôi đã cho tôi biết khi bạn rảnh.",
    "question_vi": "Hãy nghe cuộc trò chuyện giữa Douglas và Kay. Tại sao Douglas gọi Kay?",
    "answer_guess": true,
+   "extra": [
+    "complain about the project",
+    "apologise"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q35.mp3"
   },
   {
@@ -899,6 +1039,10 @@
    "translation": "Tôi rất vui được chia sẻ số liệu bán hàng mới nhất của công ty chúng tôi trong tháng này. tạp chí Freeze Frame của chúng tôi đã nhận được phản hồi tuyệt vời. Tôi tự hào thông báo rằng chúng tôi đã bán được hơn 300.000 bản, đây là một mức tăng lớn so với tháng trước, nhiều người đang mua tạp chí của chúng tôi và chúng tôi rất vui, cảm ơn sự ủng hộ của bạn, chúng tôi hy vọng sẽ bán được nhiều hơn nữa trong tương lai",
    "question_vi": "Hãy nghe giám đốc nói về doanh thu của công ty ông ấy. Có bao nhiêu bản tạp chí Freeze Frame đã được bán?",
    "answer_guess": true,
+   "extra": [
+    "Over 3,000,000 copies",
+    "Over 100,000 copies"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q36.mp3"
   },
   {
@@ -924,6 +1068,10 @@
    "translation": "Xin chào mọi người. Tôi có một thông báo quan trọng về bữa trưa hôm nay. Bữa trưa sẽ sẵn sàng lúc 2 giờ chiều. không phải lúc 12:30 trưa như một số người có thể mong đợi, hãy kiên nhẫn vì chúng tôi chuẩn bị mọi thứ cho bạn nếu bạn có bất kỳ câu hỏi nào, vui lòng hỏi, cảm ơn vì sự thông cảm của bạn và chúc bạn một ngày vui vẻ",
    "question_vi": "Nghe đầu bếp thông báo với học viên. Khi nào bữa trưa sẵn sàng?",
    "answer_guess": true,
+   "extra": [
+    "1:00 p.m",
+    "12:00 p.m"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q37.mp3"
   },
   {
@@ -949,6 +1097,10 @@
    "translation": "Khi bước vào cửa hàng, tôi nhận thấy rằng các sản phẩm tẩy rửa đang được giảm giá, chúng thường đắt hơn một chút nhưng hôm nay chúng chỉ có 1 lb 50. Tôi đã định trả 3 lb 50 nên thật ngạc nhiên là tôi đã mua một vài món vì tôi biết sau này tôi sẽ cần chúng. Đây là một cửa hàng nhỏ nhưng các giao dịch luôn tốt ở đây, thời gian để kiểm tra",
    "question_vi": "Người phụ nữ đang bước vào một cửa hàng địa phương. Sản phẩm tẩy rửa giá bao nhiêu?",
    "answer_guess": true,
+   "extra": [
+    "Fifty pence",
+    "Two pounds"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q38.mp3"
   },
   {
@@ -974,6 +1126,10 @@
    "translation": "Xin chào mọi người hôm nay tôi muốn kể cho các bạn nghe về hội nghị diễn ra tuần trước rất thú vị và có nhiều người tham dự Tôi đã nói về những ý tưởng mới trong kinh doanh Bài thuyết trình của tôi không dài lắm nhưng tôi có nhiều điều để nói, ngắn hơn dự kiến ​​15 phút tuy nhiên khán giả rất chú ý và tôi rất vui khi thấy điều đó",
    "question_vi": "Hãy nghe David nói về hội nghị. Anh ấy đã nói trong bài phát biểu bao lâu?",
    "answer_guess": true,
+   "extra": [
+    "60 minutes",
+    "20 minutes"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q39.mp3"
   },
   {
@@ -999,6 +1155,10 @@
    "translation": "Bạn có còn đạp xe đi làm hàng ngày không Greg nữa Tôi đã bán xe đạp của mình vài tháng trước vậy bây giờ bạn có lái xe không Tôi không có ô tô Tôi đi xe buýt mỗi sáng vì nó rẻ và tiện lợi",
    "question_vi": "Greg và Liz ở văn phòng đang nói chuyện về việc đi lại hàng ngày. Greg đi làm bằng phương tiện gì?",
    "answer_guess": true,
+   "extra": [
+    "On foot",
+    "By train"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q40.mp3"
   },
   {
@@ -1024,6 +1184,10 @@
    "translation": "Chào buổi sáng mọi người, cập nhật nhanh về bài thuyết trình của giám đốc chiều nay, lần đầu tiên chúng tôi cân nhắc tổ chức nó trong văn phòng của ông ấy nhưng không đủ chỗ. Có người cũng đề nghị dùng quán cà phê ở tầng dưới nhưng sẽ ồn ào quá, bài thuyết trình sẽ diễn ra trong phòng họp lúc 2 giờ chiều. vui lòng đến sớm vài phút",
    "question_vi": "Buổi thuyết trình của giám đốc sẽ diễn ra ở phòng nào?",
    "answer_guess": true,
+   "extra": [
+    "In the hall",
+    "In the library"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q41.mp3"
   },
   {
@@ -1049,6 +1213,10 @@
    "translation": "Xin chào mọi người như một phần thưởng cho sự làm việc chăm chỉ của bạn trong năm nay, chúng tôi đang lên kế hoạch cho một chuyến đi đặc biệt dành cho nhân viên vào tháng tới. Lần đầu tiên chúng tôi nghĩ đến việc đến thăm một Thành phố gần đó và một số người đề xuất dành một ngày ở vùng ngoại ô, tuy nhiên chúng tôi đã quyết định làm điều gì đó thú vị hơn sẽ đi du lịch đến một quốc gia khác trong chuyến đi 3 ngày",
    "question_vi": "Cô ấy sẽ đưa nhân viên đi đâu?",
    "answer_guess": true,
+   "extra": [
+    "To a nearby village",
+    "To the city centre"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q42.mp3"
   },
   {
@@ -1074,6 +1242,10 @@
    "translation": "Bây giờ tôi đang chuẩn bị đồ cho chuyến đi cuối tuần Tôi đã đóng gói rất nhiều quần áo nên không cần mang theo nữa. Tôi cũng nghĩ đến việc mang theo vài cuốn sách để đọc trên hành trình nhưng có lẽ không có thời gian nên tôi sẽ đi chơi vài trò chơi để mọi người cùng chơi vào buổi tối.",
    "question_vi": "Cô ấy sẽ mang theo thứ gì?",
    "answer_guess": true,
+   "extra": [
+    "Food",
+    "Music"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q43.mp3"
   },
   {
@@ -1099,6 +1271,10 @@
    "translation": "Chúng ta cần chọn một chủ đề cho dự án của mình, còn việc viết về một bác sĩ nổi tiếng thì thú vị nhưng tôi nghĩ có thể khó tìm đủ thông tin, được thôi, còn một triết gia thì chúng ta có thể nhưng chúng ta đã làm điều gì đó tương tự trước khi hãy viết về một nhà sử học thay vì ý tưởng hay hãy làm điều đó",
    "question_vi": "Họ quyết định viết về cái gì?",
    "answer_guess": true,
+   "extra": [
+    "A scientist",
+    "A writer"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q44.mp3"
   },
   {
@@ -1124,6 +1300,10 @@
    "translation": "Hãy để tôi kể cho bạn nghe về tòa nhà văn phòng của chúng tôi, tầng hai chủ yếu được sử dụng làm phòng họp và các buổi đào tạo trên tầng 4, bạn sẽ tìm thấy văn phòng của người quản lý nếu bạn cần một nơi để thư giãn hoặc uống cà phê, phòng nghỉ nằm ở tầng ba cạnh bếp",
    "question_vi": "Nhân viên mô tả một tòa nhà văn phòng. Phòng nghỉ ở tầng mấy?",
    "answer_guess": true,
+   "extra": [
+    "First",
+    "Fifth"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q45.mp3"
   },
   {
@@ -1149,6 +1329,10 @@
    "translation": "Bạn đã quyết định tham gia câu lạc bộ nào trong học kỳ này chưa Tôi vẫn đang nghĩ về câu lạc bộ công nghệ có vẻ hữu ích và Câu lạc bộ Làm vườn có vẻ thư giãn đó là những lựa chọn tốt mà câu lạc bộ nào khiến bạn quan tâm nhất. Thực ra tôi luôn thích vẽ và vẽ nên tôi nghĩ tôi sẽ tham gia Câu lạc bộ nghệ thuật",
    "question_vi": "Giáo viên nói chuyện với một sinh viên đại học. Học sinh sẽ chọn câu lạc bộ nào?",
    "answer_guess": true,
+   "extra": [
+    "Music club",
+    "Sports club"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q46.mp3"
   },
   {
@@ -1174,6 +1358,10 @@
    "translation": "Xin chào Sarah, tôi là Mark từ cửa hàng, chúng tôi sẽ đóng cửa vào Thứ Hai và Thứ Ba vì một số công việc sửa chữa, lúc đầu chúng tôi nghĩ có thể mở cửa trở lại vào Thứ Tư nhưng các công nhân cần thêm một ngày để hoàn thành mọi thứ nên cửa hàng sẽ mở cửa trở lại vào sáng Thứ Năm, vui lòng thông báo cho các nhân viên còn lại",
    "question_vi": "Quản lý cửa hàng gọi nhân viên. Khi nào cửa hàng sẽ mở cửa trở lại?",
    "answer_guess": true,
+   "extra": [
+    "Wednesday",
+    "Friday"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q47.mp3"
   },
   {
@@ -1199,6 +1387,10 @@
    "translation": "Xin chào các thành viên câu lạc bộ sách, xin lưu ý rằng địa điểm họp của chúng tôi đã thay đổi trong tuần này, chúng tôi thường gặp nhau ở thư viện và đã có lúc chúng tôi cân nhắc sử dụng lớp học vì thư viện đang được cải tạo tuy nhiên cuộc họp sẽ diễn ra tại Trung tâm Nghệ thuật trên Phố Green, chúng tôi rất mong được gặp bạn ở đó",
    "question_vi": "Lời nhắn gửi các thành viên câu lạc bộ sách. Cuộc họp ở đâu?",
    "answer_guess": true,
+   "extra": [
+    "Café",
+    "Town hall"
+   ],
    "audio": "data/Aptis_Listening_P1_De03/audio/q48.mp3"
   }
  ]

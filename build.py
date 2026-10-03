@@ -4,6 +4,7 @@ Mỗi đề: tải audio, chuyển giọng nói -> text (Google free), dịch sa
 Chạy: python3 build.py              (tất cả *.txt)
       python3 build.py De02.txt     (chỉ một số đề)
 Kết quả: data/<slug>/audio/*.mp3, data/<slug>/data.json (cache), data/<slug>/data.js, data/index.js
+Đáp án sai bổ sung (web chọn ngẫu nhiên 2 đáp án sai mỗi lần): <slug>.extra.json dạng {"1": ["...", "..."]}.
 Đề chưa có đáp án: tạo file <tên đề>.answers.json dạng {"1": "A", ...} cạnh file .txt (đánh dấu là đáp án suy ra).
 Chạy lại an toàn: bỏ qua phần đã có (xoá data/<slug>/data.json để làm lại).
 """
@@ -136,6 +137,12 @@ def build(src):
     if os.path.exists(ans_file):
         guess = {int(k): v for k, v in json.load(open(ans_file, encoding="utf-8")).items()}
 
+    # đáp án sai bổ sung: <slug>.extra.json dạng {"1": ["...", "..."]}
+    extra = {}
+    extra_file = os.path.join(os.path.dirname(src), slug + ".extra.json")
+    if os.path.exists(extra_file):
+        extra = {int(k): v for k, v in json.load(open(extra_file, encoding="utf-8")).items()}
+
     cache = {}
     if os.path.exists(cache_path):
         cache = {q["id"]: q for q in json.load(open(cache_path, encoding="utf-8"))["items"]}
@@ -148,6 +155,8 @@ def build(src):
         if not q["answer"] and guess.get(q["id"]):
             q["answer"] = guess[q["id"]]
             q["answer_guess"] = True
+        if extra.get(q["id"]):
+            q["extra"] = extra[q["id"]]
         try:
             q["audio"] = download(q, slug)
             if not q["transcript"] and q["audio"]:

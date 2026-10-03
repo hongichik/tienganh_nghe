@@ -232,11 +232,9 @@
       var q = byId[id], st = stats[id];
       var tr = el("tr"), td = el("td");
       td.appendChild(el("div", null, q.question));
-      var ao = q.options.filter(function (o) { return o.key === q.answer; })[0];
-      td.appendChild(el("div", "ans", "✓ " + q.answer + (ao ? ". " + ao.text : "")));
+      td.appendChild(el("div", "ans", "✓ " + correctText(q)));
       var picked = Object.keys(st.picks || {}).map(function (k) {
-        var o = q.options.filter(function (x) { return x.key === k; })[0];
-        return k + (o ? ". " + o.text : "") + " (" + st.picks[k] + "×)";
+        return (/^[A-D]$/.test(k) ? keyToText(q, k) : k) + " (" + st.picks[k] + "×)";
       });
       if (picked.length) td.appendChild(el("div", "picked", "Đã chọn nhầm: " + picked.join(", ")));
       var det = el("details");
@@ -263,7 +261,26 @@
     if (open) renderMistakes(mistBox);
   };
 
+  function correctText(q) {
+    var o = q.options.filter(function (o) { return o.key === q.answer; })[0];
+    return o ? o.text : "";
+  }
+  // đáp án đúng + 2 đáp án sai ngẫu nhiên (từ đáp án gốc và đáp án bổ sung), thứ tự ngẫu nhiên
+  function makeChoices(q) {
+    var right = correctText(q);
+    var wrong = q.options.map(function (o) { return o.text; }).concat(q.extra || [])
+      .filter(function (t, i, a) { return t !== right && a.indexOf(t) === i; });
+    return shuffle([right].concat(shuffle(wrong).slice(0, 2)));
+  }
+  // chuyển chữ cái cũ (A/B/C) sang nội dung đáp án
+  function keyToText(q, k) {
+    var o = q.options.filter(function (o) { return o.key === k; })[0];
+    return o ? o.text : k;
+  }
+
   var state = load() || fresh();
+  if (state.answered && state.answered.key && !state.answered.text && byId[state.answered.id])
+    state.answered = { id: state.answered.id, text: keyToText(byId[state.answered.id], state.answered.key) };
   // bỏ id không còn tồn tại / bổ sung câu mới
   state.queue = state.queue.filter(function (id) { return byId[id]; });
   DATA.items.forEach(function (q) {
@@ -321,10 +338,13 @@
     }
     var opts = el("div", "opts");
     var result = el("div", "result");
-    var answered = state.answered && state.answered.id === q.id ? state.answered.key : null;
-    var buttons = q.options.map(function (o) {
-      var b = el("button", "opt", o.key + ". " + o.text);
-      b.onclick = function () { choose(q, o.key); };
+    var answered = state.answered && state.answered.id === q.id ? state.answered.text : null;
+    if (!state.shown || state.shown.id !== q.id) { state.shown = { id: q.id, choices: makeChoices(q) }; save(); }
+    var choices = state.shown.choices;
+    var right = correctText(q);
+    var buttons = choices.map(function (t, i) {
+      var b = el("button", "opt", "ABCD"[i] + ". " + t);
+      b.onclick = function () { choose(q, t); };
       opts.appendChild(b);
       return b;
     });
@@ -334,8 +354,7 @@
     // các phần ẩn mặc định
     var ansPanel = el("div", "panel hidden");
     ansPanel.appendChild(el("h3", null, "Đáp án"));
-    var ansOpt = q.options.filter(function (o) { return o.key === q.answer; })[0];
-    ansPanel.appendChild(el("div", null, q.answer + (ansOpt ? ". " + ansOpt.text : "")));
+    ansPanel.appendChild(el("div", null, right));
     if (q.answer_guess) ansPanel.appendChild(el("div", "small", "Đáp án do AI suy ra từ transcript, có thể chưa chính xác."));
 
     var enPanel = el("div", "panel hidden");
@@ -364,16 +383,16 @@
     card.appendChild(actions);
     app.appendChild(card);
 
-    function showAnswered(key) {
+    function showAnswered(text) {
       buttons.forEach(function (b, i) {
-        var k = q.options[i].key;
+        var t = choices[i];
         b.disabled = true;
-        if (k === q.answer) b.classList.add("correct");
-        else if (k === key) b.classList.add("wrong");
+        if (t === right) b.classList.add("correct");
+        else if (t === text) b.classList.add("wrong");
       });
-      var ok = key === q.answer;
+      var ok = text === right;
       result.className = "result " + (ok ? "ok" : "bad");
-      result.textContent = ok ? "✓ Đúng" : "✗ Sai — đáp án đúng là " + q.answer + ". Câu này sẽ quay lại sau.";
+      result.textContent = ok ? "✓ Đúng" : "✗ Sai — đáp án đúng là: " + right + ". Câu này sẽ quay lại sau.";
       next.disabled = false;
     }
 
@@ -382,7 +401,7 @@
     // rời câu hiện tại: sai -> đưa về cuối; đúng -> đã thuộc
     function leave(forgot) {
       var a = state.answered;
-      var wasCorrect = a && a.key === q.answer;
+      var wasCorrect = a && a.text === right;
       if (forgot) {
         stat(q.id).forgot++; saveStats();
         if (wasCorrect) {
@@ -394,6 +413,7 @@
         requeue(q.id);
       }
       state.answered = null;
+      state.shown = null;
       save(); render();
     }
     forget.onclick = function () { leave(true); };
@@ -402,8 +422,8 @@
     function choose(q, key) {
       if (state.answered) return;
       state.attempts++;
-      state.answered = { id: q.id, key: key };
-      if (key === q.answer) { state.queue.shift(); state.mastered.push(q.id); }
+      state.answered = { id: q.id, text: key };
+      if (key === right) { state.queue.shift(); state.mastered.push(q.id); }
       else {
         state.wrong++;
         var st = stat(q.id);
