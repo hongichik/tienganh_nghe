@@ -49,6 +49,7 @@
   .tests { display:grid; gap:10px; }
   .test { display:block; text-decoration:none; color:var(--text); background:var(--card); border:1px solid var(--line);
           border-radius:12px; padding:14px 16px; }
+  .test.all { border-color:var(--accent); border-width:2px; }
   .test:hover { border-color:var(--accent); }
   .test .name { font-weight:600; }
   .test .meta { font-size:13px; color:var(--muted); margin-top:2px; }
@@ -95,6 +96,7 @@
 <script>
 (function () {
   var INDEX = window.QUIZ_INDEX || [];
+  var ALL = "__all__";
   var keyOf = function (slug) { return "aptis-quiz:" + slug; };
   function readState(slug) {
     try { var s = JSON.parse(localStorage.getItem(keyOf(slug))); if (s && s.queue) return s; } catch (e) {}
@@ -115,6 +117,20 @@
     var list = document.getElementById("list");
     list.innerHTML = "";
     if (!INDEX.length) { list.appendChild(el("p", null, "Chưa có đề nào — chạy python3 build.py")); return; }
+    var total = INDEX.reduce(function (n, t) { return n + t.count; }, 0);
+    var allBox = el("div", "tests");
+    var all = el("a", "test all"); all.href = "#" + ALL;
+    var allName = el("div", "name", "🎯 Luyện tất cả các đề");
+    var ast = readState(ALL), am = ast ? ast.mastered.length : 0;
+    if (ast && am === total) allName.appendChild(el("span", "tag ok", "100%"));
+    all.appendChild(allName);
+    all.appendChild(el("div", "meta", INDEX.length + " đề · " + total + " câu xáo trộn · " +
+      (ast ? "đã thuộc " + am + "/" + total + " · sai " + ast.wrong : "chưa làm")));
+    var abar = el("div", "bar"), afill = el("div"); afill.style.width = (total ? am / total * 100 : 0) + "%";
+    abar.appendChild(afill); all.appendChild(abar);
+    allBox.appendChild(all);
+    list.appendChild(allBox);
+
     var groups = {};
     var order = [];
     INDEX.forEach(function (t) {
@@ -145,17 +161,39 @@
 
   // ===== router =====
   var cleanup = null;
+  function loadTest(slug, cb) {
+    var sc = document.createElement("script");
+    sc.src = "data/" + slug + "/data.js";
+    sc.onload = cb;
+    sc.onerror = function () { alert("Không tìm thấy đề: " + slug); location.hash = ""; };
+    document.body.appendChild(sc);
+  }
+  // gộp mọi đề thành một bài; id = thứ tự đề * 1000 + id câu để không trùng
+  function combineAll() {
+    var reg = window.QUIZ_REG || {}, items = [];
+    INDEX.forEach(function (t, ti) {
+      var name = t.title.split(/\s+[–-]\s+/).slice(1).join(" – ").replace(/\s*\(.*\)\s*$/, "") || t.title;
+      (reg[t.slug] ? reg[t.slug].items : []).forEach(function (q) {
+        var c = {}; for (var k in q) c[k] = q[k];
+        c.id = (ti + 1) * 1000 + q.id;
+        c.src = name + " · câu " + q.id;
+        items.push(c);
+      });
+    });
+    return { slug: ALL, title: "Luyện tất cả các đề (" + items.length + " câu)", items: items };
+  }
   function route() {
     if (cleanup) { cleanup(); cleanup = null; }
     var slug = decodeURIComponent(location.hash.slice(1));
     if (!slug) return showHome();
     var reg = window.QUIZ_REG || {};
+    if (slug === ALL) {
+      var missing = INDEX.filter(function (t) { return !reg[t.slug]; });
+      if (!missing.length) return (cleanup = startQuiz(combineAll()));
+      return loadTest(missing[0].slug, function () { if (decodeURIComponent(location.hash.slice(1)) === slug) route(); });
+    }
     if (reg[slug]) return (cleanup = startQuiz(reg[slug]));
-    var sc = document.createElement("script");
-    sc.src = "data/" + slug + "/data.js";
-    sc.onload = function () { if (decodeURIComponent(location.hash.slice(1)) === slug) route(); };
-    sc.onerror = function () { alert("Không tìm thấy đề: " + slug); location.hash = ""; };
-    document.body.appendChild(sc);
+    loadTest(slug, function () { if (decodeURIComponent(location.hash.slice(1)) === slug) route(); });
   }
   window.addEventListener("hashchange", route);
   route();
@@ -232,6 +270,7 @@
       var q = byId[id], st = stats[id];
       var tr = el("tr"), td = el("td");
       td.appendChild(el("div", null, q.question));
+      if (q.src) td.appendChild(el("div", "small", q.src));
       td.appendChild(el("div", "ans", "✓ " + correctText(q)));
       var picked = Object.keys(st.picks || {}).map(function (k) {
         return (/^[A-D]$/.test(k) ? keyToText(q, k) : k) + " (" + st.picks[k] + "×)";
